@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/resalalogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Cup login</title>
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <img src="./assets/farz logo.png" alt="farz logo">
+    </header>
+    <div class="center">
+        <h1>Login</h1>
+        <form>
+            <div class="txt_field">
+                <input type="email" id="email" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <input class="btn" id="login" type="submit" value="Login">
+        </form>
+    </div>
+    <div id="snackbar">Wrong email or password</div>
+    <div class="row justify-content-center">
+    <div class="spinner-border" id="spin" style="width: 3rem; height: 3rem; margin-top: 35%;" role="status" hidden>
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyC7oeKjthByrRm6EoF0gl5wjY528j4aWMM",
+        authDomain: "resala-cup.firebaseapp.com",
+        databaseURL: "https://resala-cup-default-rtdb.firebaseio.com",
+        projectId: "resala-cup",
+        storageBucket: "resala-cup.appspot.com",
+        messagingSenderId: "920754872696",
+        appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+
+    document.getElementById("login").addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent form submission
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        document.getElementById("spin").removeAttribute("hidden");
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                
+                const user = userCredential.user;
+                if(email == "admin@gmail.com"){
+                    window.location.href = "html/admin/homePage.html";
+                }else if(email == "hr@gmail.com"){
+                    localStorage.setItem("committee", "hr");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "etisalat@gmail.com"){
+                    localStorage.setItem("committee", "Telecom");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "monitoring@gmail.com"){
+                    localStorage.setItem("committee", "follow-up");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "exhibition@gmail.com"){
+                     localStorage.setItem("committee", "Exhibitions");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "feeding@gmail.com"){
+                     localStorage.setItem("committee", "feeding");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "feraq@gmail.com"){
+                     localStorage.setItem("committee", "team");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "champions@gmail.com"){
+                     localStorage.setItem("committee", "challenge-champions");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "advertisement@gmail.com"){
+                     localStorage.setItem("committee", "Advertisements");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "cubs@gmail.com"){
+                    localStorage.setItem("committee", "cubs-committee");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "doctor@gmail.com"){
+                    localStorage.setItem("committee", "Dr-competitions");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "CharityMarket@gmail.com"){
+                     localStorage.setItem("committee", "MarketCommittee");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "reconstruction@gmail.com"){
+                     localStorage.setItem("committee", "reconstruction");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "donate@gmail.com"){
+                    localStorage.setItem("committee", "Donate");
+                    window.location.href = "html/committees/homePage.html";
+                }else if(email == "maadi@gmail.com"){
+                    localStorage.setItem("branch", "maadi");
+                    window.location.href = "html/users/committeesMenu.html";
+                }else if(email == "alex@gmail.com"){
+                    localStorage.setItem("branch", "alex");
+                    window.location.href = "html/users/committeesMenu.html";
+                }else if(email == "October@gmail.com"){
+                    localStorage.setItem("branch", "October");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "ElMokattam@gmail.com") {
+                    localStorage.setItem("branch", "El Mokattam");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "Faisal@gmail.com") {
+                    localStorage.setItem("branch", "Faisal");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "Helwan@gmail.com") {
+                    localStorage.setItem("branch", "Helwan");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "Mohandessin@gmail.com") {
+                    localStorage.setItem("branch", "Mohandessin");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "nasercity@gmail.com") {
+                    localStorage.setItem("branch", "naser city");
+                    window.location.href = "html/users/committeesMenu.html";
+                } else if (email == "heliopolis@gmail.com") {
+                    localStorage.setItem("branch", "new cairo");
+                    window.location.href = "html/users/committeesMenu.html";
+                }
+                
+                else{
+                    alert("find user");
+                }
+                
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                myFunction();
+                document.getElementById("spin").setAttribute("hidden", "true");
+            });
+    });
+
+</script>
+<script src="./JS/js/bootstrap.js"></script>
+<script src="./JS/script.js"></script>
+
+</html>

@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../assets/resalalogo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> لجنة الفرق</title>
+    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/hr.css">
+    <style>
+        table {
+            direction: rtl;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>لجنة الفرق</h1>
+
+    <form>
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="bac">
+                    <th style="background-color: #E2EFDA; padding-left: 50px; padding-right: 50px;">النقاط</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">1000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">7000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">1000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">500</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">200</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">2000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">2000</th>
+                    <th style="background-color: #E2EFDA; color: red; padding-left: 50px; padding-right: 50px;"></th>
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">الحد الأقصى للنقاط</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">1000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">7000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">1000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">500</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">200</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">2000</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">2000</th>
+                    <th style="background-color: #E2EFDA; color: red;"></th>
+                </tr>
+                <tr style="background-color: #E2EFDA;">
+                    <th style="background-color: #E2EFDA;">البند</td>
+                    <th colspan="3" style="background-color: #E2EFDA;">عدد أيام فتح الاوضة</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">عدد الاشوالة المفروزة</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">عدد التكيس</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">الجرد الدوري</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">عدد أعضاء اللجنة</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">عدد الاجتماعات</th>
+                    <th colspan="3" style="background-color: #E2EFDA;">نقاط المدير التنفيذي الفرق</th>
+                    <th style="background-color: #E2EFDA; color: red;"></th>
+
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">الشهر</th>
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA;">المستهدف</th>
+                    <th style="background-color: #E2EFDA;">المحقق</th>
+                    <th style="background-color: #E2EFDA;">النقاط</th>
+
+                    <th style="background-color: #E2EFDA; color: red; "> إجمالى النقاط</th>
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">شهر 9</th>
+                    <td id="Numberoomopenmonth9Target"></td>
+                    <td id="Numberoomopenmonth9achievement"></td>
+                    <td id="Numberoomopenmonth9point"></td>
+
+                    <td id="sacksSortedmonth9Target"></td>
+                    <td  id="sacksSortedmonth9achievement"></td>
+                    <td id="sacksSortedmonth9point"></td>
+
+                    <td id="Encapsulationmonth9Target"></td>
+                    <td id="Encapsulationmonth9achievement"></td>
+                    <td id="Encapsulationmonth9point"></td>
+
+                    <td id="periodicInventorymonth9Target"></td>
+                    <td id="periodicInventorymonth9achievement"></td>
+                    <td id="periodicInventorymonth9point"></td>
+
+                    <td id="committeemembersmonth9Target"></td>
+                    <td id="committeemembersmonth9achievement"></td>
+                    <td id="committeemembersmonth9point"></td>
+
+                    <td id="nmeetingsmonth9Target"></td>
+                    <td id="nmeetingsmonth9achievement"></td>
+                    <td id="nmeetingsmonth9point"></td>
+
+                    <td id="CEOPointDifferencemonth9Target"></td>
+                    <td id="CEOPointDifferencemonth9achievement"></td>
+                    <td id="CEOPointDifferencemonth9point"></td>
+
+
+                    <th style="background-color: #E2EFDA; color: red;" id="totalpointMonth9"></th>
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">شهر 10</th>
+                    <td id="Numberoomopenmonth10Target"></td>
+                    <td id="Numberoomopenmonth10achievement"></td>
+                    <td id="Numberoomopenmonth10point"></td>
+
+                    <td id="sacksSortedmonth10Target"></td>
+
+                    <td id="sacksSortedmonth10achievement"></td>
+                    <td id="sacksSortedmonth10point"></td>
+
+                    <td id="Encapsulationmonth10Target"></td>
+                    <td id="Encapsulationmonth10achievement"></td>
+                    <td id="Encapsulationmonth10point"></td>
+
+                    <td id="periodicInventorymonth10Target"></td>
+                    <td id="periodicInventorymonth10achievement"></td>
+                    <td id="periodicInventorymonth10point"></td>
+
+                    <td id="committeemembersmonth10Target"></td>
+                    <td  id="committeemembersmonth10achievement"></td>
+                    <td id="committeemembersmonth10point"></td>
+
+                    <td id="nmeetingsmonth10Target"></td>
+                    <td id="nmeetingsmonth10achievement"></td>
+                    <td id="nmeetingsmonth10point"></td>
+
+                    <td id="CEOPointDifferencemonth10Target"></td>
+                    <td id="CEOPointDifferencemonth10achievement"></td>
+                    <td id="CEOPointDifferencemonth10point"></td>
+
+                    <th style="background-color: #E2EFDA; color: red;" id="totalpointMonth10"></th>
+
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">شهر 11</th>
+                    <td id="Numberoomopenmonth11Target"></td>
+                    <td id="Numberoomopenmonth11achievement"></td>
+                    <td id="Numberoomopenmonth11point"></td>
+
+                    <td id="sacksSortedmonth11Target"></td>
+                    <td id="sacksSortedmonth11achievement"></td>
+                    <td id="sacksSortedmonth11point"></td>
+
+                    <td id="Encapsulationmonth11Target"></td>
+                    <td id="Encapsulationmonth11achievement"></td>
+                    <td id="Encapsulationmonth11point"></td>
+
+                    <td id="periodicInventorymonth11Target"></td>
+                    <td id="periodicInventorymonth11achievement"></td>
+                    <td id="periodicInventorymonth11point"></td>
+
+                    <td id="committeemembersmonth11Target"></td>
+                    <td id="committeemembersmonth11achievement"></td>
+                    <td id="committeemembersmonth11point"></td>
+
+                    <td id="nmeetingsmonth11Target"></td>
+                    <td id="nmeetingsmonth11achievement"></td>
+                    <td id="nmeetingsmonth11point"></td>
+
+                    <td id="CEOPointDifferencemonth11Target"></td>
+                    <td  id="CEOPointDifferencemonth11achievement"></td>
+                    <td id="CEOPointDifferencemonth11point"></td>
+
+
+                    <th style="background-color: #E2EFDA; color: red;" id="totalpointMonth11"></th>
+                </tr>
+                <tr>
+                    <th style="background-color: #E2EFDA;">شهر 12</th>
+                    <td id="Numberoomopenmonth12Target"></td>
+                    <td  id="Numberoomopenmonth12achievement"></td>
+                    <td id="Numberoomopenmonth12point"></td>
+
+                    <td id="sacksSortedmonth12Target"></td>
+                    <td id="sacksSortedmonth12achievement"></td>
+                    <td id="sacksSortedmonth12point"></td>
+
+                    <td id="Encapsulationmonth12Target"></td>
+                    <td id="Encapsulationmonth12achievement"></td>
+                    <td id="Encapsulationmonth12point"></td>
+
+                    <td id="periodicInventorymonth12Target"></td>
+                    <td id="periodicInventorymonth12achievement"></td>
+                    <td id="periodicInventorymonth12point"></td>
+
+                    <td id="committeemembersmonth12Target"></td>
+                    <td id="committeemembersmonth12achievement"></td>
+                    <td id="committeemembersmonth12point"></td>
+
+                    <td id="nmeetingsmonth12Target"></td>
+                    <td id="nmeetingsmonth12achievement" ></td>
+                    <td id="nmeetingsmonth12point"></td>
+
+                    <td id="CEOPointDifferencemonth12Target"></td>
+                    <td id="CEOPointDifferencemonth12achievement" ></td>
+                    <td id="CEOPointDifferencemonth12point"></td>
+
+                    <th style="background-color: #E2EFDA; color: red;" id="totalpointMonth12"></th>
+                </tr>
+
+                <tr>
+                    <th style="background-color: #E2EFDA; color: red;">الإجمالى</th>
+                    <td style="color: red;" id="numnewtotalTarget"></td>
+                    <td style="color: red;" id="numnewtotalachievement"></td>
+                    <td style="color: red;" id="numnewtotalpoint"></td>
+
+                    <td style="color: red;" id="averagenewpoststotalTarget"></td>
+                    <td style="color: red;" id="averagenewpoststotalachievement"></td>
+                    <td style="color: red;" id="averagenewpoststotalpoint"></td>
+
+                    <td style="color: red;" id="withinfollowuptotalTarget"></td>
+                    <td style="color: red;" id="withinfollowuptotalachievement"></td>
+                    <td style="color: red;" id="withinfollowuptotalpoint"></td>
+
+                    <td style="color: red;" id="averagewithinfollowuptotalTarget"></td>
+                    <td style="color: red;" id="averagewithinfollowuptotalachievement"></td>
+                    <td style="color: red;" id="averagewithinfollowuptotalpoint"></td>
+
+                    <td style="color: red;" id="Withinteam3monthstotalTarget"></td>
+                    <td style="color: red;" id="Withinteam3monthstotalachievement"></td>
+                    <td style="color: red;" id="Withinteam3monthstotalpoint"></td>
+
+                    <td style="color: red;" id="averageWithinteam3monthstotalTarget"></td>
+                    <td style="color: red;" id="averageWithinteam3monthstotalachievement"></td>
+                    <td style="color: red;" id="averagewWithinteam3monthstotalpoint"></td>
+
+                    <td style="color: red;" id="orientationworktotalTarget"></td>
+                    <td style="color: red;" id="orientationworktalachievement"></td>
+                    <td style="color: red;" id="orientationworktotalpoint"></td>
+
+
+
+                    <th style="background-color: #E2EFDA; color: red;" id="totalPoint"></th>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <br>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div id="line_top_x"></div>
+        </div>
+    </div>
+    <br>
+</body>
+<script src="../../JS/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../../JS/script.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child, update } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyC7oeKjthByrRm6EoF0gl5wjY528j4aWMM",
+        authDomain: "resala-cup.firebaseapp.com",
+        databaseURL: "https://resala-cup-default-rtdb.firebaseio.com",
+        projectId: "resala-cup",
+        storageBucket: "resala-cup.appspot.com",
+        messagingSenderId: "920754872696",
+        appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    var branch = localStorage.getItem("branch");
+    const dbRef = ref(db);
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Numberoomopenmonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("sacksSortedmonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Encapsulationmonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth9Target").innerHTML = snapshot.val();
+        } else {
+            innerHTML
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("periodicInventorymonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("committeemembersmonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("nmeetingsmonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month9/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth9Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month10/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth10Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month11/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth11Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month12/Target`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth12Target").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month9/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth9achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month10/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth10achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month11/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth11achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month12/achievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth12achievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month9/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth9point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month10/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth10point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month11/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth11point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/month12/point`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("CEOPointDifferencemonth12point").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    // *******************************************
+    // total point and total month start from here
+    // *******************************************
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("numnewtotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("numnewtotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Numberoomopen/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("numnewtotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagenewpoststotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagenewpoststotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/sacksSorted/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagenewpoststotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("withinfollowuptotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("withinfollowuptotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/Encapsulation/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("withinfollowuptotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagewithinfollowuptotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagewithinfollowuptotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/periodicInventory/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagewithinfollowuptotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Withinteam3monthstotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Withinteam3monthstotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/committeemembers/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Withinteam3monthstotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averageWithinteam3monthstotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averageWithinteam3monthstotalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/nmeetings/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("averagewWithinteam3monthstotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/totalTarget`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("orientationworktotalTarget").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/totalachievement`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("orientationworktalachievement").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/CEOPointDifference/totalpoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("orientationworktotalpoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+
+    get(child(dbRef, `branches/${branch}/team/totalpointMonth9`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("totalpointMonth9").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/totalpointMonth10`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("totalpointMonth10").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/totalpointMonth11`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("totalpointMonth11").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/totalpointMonth12`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("totalpointMonth12").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("totalPoint").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+    // -------------------------------------------------------------------
+
+    const fetchData = (branch, month) => {
+        return get(child(dbRef, `branches/${branch}/team/totalpointMonth${month}`))
+            .then((snapshot) => {
+                if (snapshot.exists()) {
+                    return snapshot.val();
+                } else {
+                    console.log(`No data available for Month ${month}`);
+                    return 0;
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+                throw error;
+            });
+    };
+
+    Promise.all([
+        fetchData(branch, 9),
+        fetchData(branch, 10),
+        fetchData(branch, 11),
+        fetchData(branch, 12),
+    ])
+        .then((data) => {
+            google.charts.load('current', { packages: ['line'] });
+            google.charts.setOnLoadCallback(() => drawChart(data));
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+    function drawChart(data) {
+        if (typeof google.charts === 'undefined' || typeof google.visualization === 'undefined' || typeof google.visualization.DataTable === 'undefined') {
+            console.error("Google Visualization library not loaded correctly.");
+            return;
+        }
+
+        var chartData = new google.visualization.DataTable();
+        chartData.addColumn('string', 'Month');
+        chartData.addColumn('number', 'total point per month');
+
+        chartData.addRows([
+            ['Sep 23', data[0]],
+            ['Oct 23', data[1]],
+            ['Nov 23', data[2]],
+            ['Dec 23', data[3]],
+        ]);
+
+        var options = {
+            chart: {
+
+            },
+            width: 900,
+            height: 500,
+            axes: {
+                x: {
+                    0: { side: 'bottom' },
+                },
+            },
+        };
+
+        var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+        chart.draw(chartData, google.charts.Line.convertOptions(options));
+    }
+
+</script>
+
+</html>

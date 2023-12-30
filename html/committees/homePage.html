@@ -1,0 +1,3557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../assets/resalalogo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/home.css">
+    <title>The Cup login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>سَهْلٍ</h1>
+        <div class="chartsBx">
+            <div id="chart_div" class="chart" style="height: 500px; width: 900px;"></div>
+        </div>
+        <br>
+        <div class="container">
+
+            <!-- المعادى -->
+            <div class="box">
+                <h3>المعادى</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أمنية</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أمل/ فؤاد</p>
+                </div>
+                <div>
+                    <progress value="0" max="100" id="totalPointMaadi"></progress>
+                </div>
+                <a class="btn" id="maadi">اضغط هنا</a>
+            </div>
+
+            <!-- المهندسين -->
+            <div class="box">
+                <h3>المهندسين</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أحمد</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أميرة</p>
+                </div>
+                <div>
+                    <progress value="0" max="100" id="totalPointMohn"></progress>
+                </div>
+                <a id="Mohandessin" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- مدينة نصر -->
+            <div class="box">
+                <h3>مدينة نصر</h3>
+                <div class="select">
+                    <span>برونزى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">سلمى</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">اسراء</p>
+                </div>
+
+                <div>
+                    <progress value="0" max="100" id="totalPointNaserCity"></progress>
+                </div>
+
+                <a id="naser-city" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- مصر الجديدة -->
+            <div class="box">
+                <h3>مصر الجديدة</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أشرف</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نورهان</p>
+                </div>
+                <div>
+                    <progress value="0" max="100" id="totalPointNewCairo"></progress>
+                </div>
+                <a id="new-cairo" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- اسكندرية -->
+            <div class="box">
+                <h3>اسكندرية</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">محمود</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نور</p>
+                </div>
+
+                <div>
+                    <progress value="0" max="100" id="totalPointAlex"></progress>
+                </div>
+
+                <a class="btn" id="alex">اضغط هنا</a>
+            </div>
+
+            <!-- فيصل -->
+            <div class="box">
+                <h3>فيصل</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">اسراء</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">اسراء</p>
+                </div>
+
+                <div>
+                    <progress value="0" max="100" id="totalPointFasiel"></progress>
+                </div>
+
+                <a id="Faisal" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- حلوان -->
+            <div class="box">
+                <h3>حلوان</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">مصطفى</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">زينب</p>
+                </div>
+
+                <div>
+                    <progress value="0" max="100" id="totalPointHelwan"></progress>
+                </div>
+                <a id="Helwan" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- المقطم -->
+            <div class="box">
+                <h3>المقطم</h3>
+                <div class="select">
+                    <span>برونزى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">مريم</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">تسنيم</p>
+                </div>
+
+                <div>
+                    <progress value="0" max="100" id="totalPointMo"></progress>
+                </div>
+
+                <a id="El-Mokattam" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- October -->
+            <div class="box">
+                <h3>اكتوبر</h3>
+                <div class="select">
+                    <span>برونزى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">ساره</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">هبة</p>
+                </div>
+                <div>
+                    <progress value="0" max="100" id="totalPointOct"></progress>
+                </div>
+                <a id="October" class="btn">اضغط هنا</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../../JS/js/bootstrap.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyC7oeKjthByrRm6EoF0gl5wjY528j4aWMM",
+        authDomain: "resala-cup.firebaseapp.com",
+        databaseURL: "https://resala-cup-default-rtdb.firebaseio.com",
+        projectId: "resala-cup",
+        storageBucket: "resala-cup.appspot.com",
+        messagingSenderId: "920754872696",
+        appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    var commettie = localStorage.getItem("committee");
+
+    document.getElementById("maadi").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "maadi");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+
+    });
+
+
+    document.getElementById("alex").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "alex");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("Mohandessin").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "Mohandessin");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("naser-city").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "naser city");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("new-cairo").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "new cairo");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("Faisal").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "Faisal");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("Helwan").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "Helwan");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("El-Mokattam").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "El Mokattam");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    document.getElementById("October").addEventListener('click', function (e) {
+        localStorage.setItem("branch", "October");
+        if (commettie == "hr") {
+            window.location.href = "hrCommittees.html";
+        } else if (commettie == "Telecom") {
+            window.location.href = "TelecomCommittes.html";
+        } else if (commettie == "follow-up") {
+            window.location.href = "followUpCommittee.html";
+        } else if (commettie == "Exhibitions") {
+            window.location.href = "ExhibitionsCommitte.html";
+        } else if (commettie == "feeding") {
+            window.location.href = "feedingCommitte.html";
+        } else if (commettie == "team") {
+            window.location.href = "teamCommittee.html";
+        } else if (commettie == "challenge-champions") {
+            window.location.href = "challengeChampion.html";
+        } else if (commettie == "Advertisements") {
+            window.location.href = "advertisementCommittee.html";
+        } else if (commettie == "cubs-committee") {
+            window.location.href = "cubsCommittee.html";
+        } else if (commettie == "Dr-competitions") {
+            window.location.href = "doctorCompetitions.html";
+        } else if (commettie == "MarketCommittee") {
+            window.location.href = "marketCommittee.html";
+        } else if (commettie == "reconstruction") {
+            window.location.href = "reconstructionCommittee.html";
+        } else if (commettie == "Donate") {
+            window.location.href = "donateCommittee.html";
+        }
+    });
+
+    const dbRef = ref(db);
+    var totalHr;
+
+    // hr
+    if (commettie == "hr") {
+        get(child(dbRef, `branches/maadi/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/hr/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        // Telecom
+    } else if (commettie == "Telecom") {
+        get(child(dbRef, `branches/maadi/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 30000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/Telecom/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        //follow-up
+    } else if (commettie == "follow-up") {
+        get(child(dbRef, `branches/maadi/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/follow-up/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 48800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+    } //exhibition
+    else if (commettie == "Exhibitions") {
+        get(child(dbRef, `branches/maadi/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/Exhibitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+    }//feeding
+
+    else if (commettie == "feeding") {
+        get(child(dbRef, `branches/maadi/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/feeding/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+    }//team
+
+    else if (commettie == "team") {
+        get(child(dbRef, `branches/maadi/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/team/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }//challenge-champions
+
+    else if (commettie == "challenge-champions") {
+        get(child(dbRef, `branches/maadi/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/challenge-champions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }//Advertisements
+    else if (commettie == "Advertisements") {
+        get(child(dbRef, `branches/maadi/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/Advertisements/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+        //--->
+    } else if (commettie == "cubs-committee") {
+        get(child(dbRef, `branches/maadi/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/cubs-committee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }
+
+    //Dr-competitions
+    else if (commettie == "Dr-competitions") {
+        get(child(dbRef, `branches/maadi/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/Dr-competitions/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }//MarketCommittee
+    else if (commettie == "MarketCommittee") {
+        get(child(dbRef, `branches/maadi/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/MarketCommittee/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }//reconstruction
+    else if (commettie == "reconstruction") {
+        get(child(dbRef, `branches/maadi/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/reconstruction/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }//Donate
+
+    else if (commettie == "Donate") {
+        get(child(dbRef, `branches/maadi/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointMaadi");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Mohandessin/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointMohn");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        get(child(dbRef, `branches/naser city/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointNaserCity");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+
+        get(child(dbRef, `branches/new cairo/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointNewCairo");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/alex/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointAlex");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Faisal/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointFasiel");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/Helwan/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointHelwan");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/El Mokattam/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointMo");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+
+        get(child(dbRef, `branches/October/Donate/totalPoint`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.val());
+                totalHr = snapshot.val();
+                var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+                var progressElement = document.getElementById("totalPointOct");
+                if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                    progressElement.value = 100;
+                } else {
+                    progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+                }
+                console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }
+
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.charts.setOnLoadCallback(init);
+
+    function init() {
+        // Your existing code here, including the code that calls drawLineChart
+        var hrmaadiPromise = get(child(dbRef, `branches/maadi/hr/totalPoint`));
+        var advertisementsmaadiPromise = get(child(dbRef, `branches/maadi/Advertisements/totalPoint`));
+        var DonatemaadiPromise = get(child(dbRef, `branches/maadi/Donate/totalPoint`));
+        var DrcompetitionsmaadiPromise = get(child(dbRef, `branches/maadi/Dr-competitions/totalPoint`));
+        var exhibitionsmaadiPromise = get(child(dbRef, `branches/maadi/Exhibitions/totalPoint`));
+        var MarketmaadiPromise = get(child(dbRef, `branches/maadi/MarketCommittee/totalPoint`));
+        var TelecommaadiPromise = get(child(dbRef, `branches/maadi/Telecom/totalPoint`));
+        var challengechampionsmaadiPromise = get(child(dbRef, `branches/maadi/challenge-champions/totalPoint`));
+        var cubscommitteemaadiPromise = get(child(dbRef, `branches/maadi/cubs-committee/totalPoint`));
+        var feedingmaadiPromise = get(child(dbRef, `branches/maadi/feeding/totalPoint`));
+        var followupmaadiPromise = get(child(dbRef, `branches/maadi/follow-up/totalPoint`));
+        var reconstructionmaadiPromise = get(child(dbRef, `branches/maadi/reconstruction/totalPoint`));
+        var teammaadiPromise = get(child(dbRef, `branches/maadi/team/totalPoint`));
+        var BonusMaadi = get(child(dbRef, `branches/maadi/plus-minus/Bonustotal`));
+        var minusMaadi = get(child(dbRef, `branches/maadi/plus-minus/minustotal`));
+
+
+        var hrMohandessinPromise = get(child(dbRef, `branches/Mohandessin/hr/totalPoint`));
+        var advertisementsMohandessinPromise = get(child(dbRef, `branches/Mohandessin/Advertisements/totalPoint`));
+        var DonateMohandessinPromise = get(child(dbRef, `branches/Mohandessin/Donate/totalPoint`));
+        var DrcompetitionsMohandessinPromise = get(child(dbRef, `branches/Mohandessin/Dr-competitions/totalPoint`));
+        var exhibitionsMohandessinPromise = get(child(dbRef, `branches/Mohandessin/Exhibitions/totalPoint`));
+        var MarketMohandessinPromise = get(child(dbRef, `branches/Mohandessin/MarketCommittee/totalPoint`));
+        var TelecomMohandessinPromise = get(child(dbRef, `branches/Mohandessin/Telecom/totalPoint`));
+        var challengechampionsMohandessinPromise = get(child(dbRef, `branches/Mohandessin/challenge-champions/totalPoint`));
+        var cubscommitteeMohandessinPromise = get(child(dbRef, `branches/Mohandessin/cubs-committee/totalPoint`));
+        var feedingMohandessinPromise = get(child(dbRef, `branches/Mohandessin/feeding/totalPoint`));
+        var followupMohandessinPromise = get(child(dbRef, `branches/Mohandessin/follow-up/totalPoint`));
+        var reconstructionMohandessinPromise = get(child(dbRef, `branches/Mohandessin/reconstruction/totalPoint`));
+        var teamMohandessinPromise = get(child(dbRef, `branches/Mohandessin/team/totalPoint`));
+        var BonusMohandessin = get(child(dbRef, `branches/Mohandessin/plus-minus/Bonustotal`));
+        var minusMohandessin = get(child(dbRef, `branches/Mohandessin/plus-minus/minustotal`));
+
+
+        var hralexPromise = get(child(dbRef, `branches/alex/hr/totalPoint`));
+        var advertisementsalexPromise = get(child(dbRef, `branches/alex/Advertisements/totalPoint`));
+        var DonatealexPromise = get(child(dbRef, `branches/alex/Donate/totalPoint`));
+        var DrcompetitionsalexPromise = get(child(dbRef, `branches/alex/Dr-competitions/totalPoint`));
+        var exhibitionsalexPromise = get(child(dbRef, `branches/alex/Exhibitions/totalPoint`));
+        var MarketalexPromise = get(child(dbRef, `branches/alex/MarketCommittee/totalPoint`));
+        var TelecomalexPromise = get(child(dbRef, `branches/alex/Telecom/totalPoint`));
+        var challengechampionsalexPromise = get(child(dbRef, `branches/alex/challenge-champions/totalPoint`));
+        var cubscommitteealexPromise = get(child(dbRef, `branches/alex/cubs-committee/totalPoint`));
+        var feedingalexPromise = get(child(dbRef, `branches/alex/feeding/totalPoint`));
+        var followupalexPromise = get(child(dbRef, `branches/alex/follow-up/totalPoint`));
+        var reconstructionalexPromise = get(child(dbRef, `branches/alex/reconstruction/totalPoint`));
+        var teamalexPromise = get(child(dbRef, `branches/alex/team/totalPoint`));
+        var Bonusalex = get(child(dbRef, `branches/alex/plus-minus/Bonustotal`));
+        var minusalex = get(child(dbRef, `branches/alex/plus-minus/minustotal`));
+
+
+        var hrFaisalPromise = get(child(dbRef, `branches/Faisal/hr/totalPoint`));
+        var advertisementsFaisalPromise = get(child(dbRef, `branches/Faisal/Advertisements/totalPoint`));
+        var DonateFaisalPromise = get(child(dbRef, `branches/Faisal/Donate/totalPoint`));
+        var DrcompetitionsFaisalPromise = get(child(dbRef, `branches/Faisal/Dr-competitions/totalPoint`));
+        var exhibitionsFaisalPromise = get(child(dbRef, `branches/Faisal/Exhibitions/totalPoint`));
+        var MarketFaisalPromise = get(child(dbRef, `branches/Faisal/MarketCommittee/totalPoint`));
+        var TelecomFaisalPromise = get(child(dbRef, `branches/Faisal/Telecom/totalPoint`));
+        var challengechampionsFaisalPromise = get(child(dbRef, `branches/Faisal/challenge-champions/totalPoint`));
+        var cubscommitteeFaisalPromise = get(child(dbRef, `branches/Faisal/cubs-committee/totalPoint`));
+        var feedingFaisalPromise = get(child(dbRef, `branches/Faisal/feeding/totalPoint`));
+        var followupFaisalPromise = get(child(dbRef, `branches/Faisal/follow-up/totalPoint`));
+        var reconstructionFaisalPromise = get(child(dbRef, `branches/Faisal/reconstruction/totalPoint`));
+        var teamFaisalPromise = get(child(dbRef, `branches/Faisal/team/totalPoint`));
+        var BonuFaisal = get(child(dbRef, `branches/Faisal/plus-minus/Bonustotal`));
+        var minuFaisal = get(child(dbRef, `branches/Faisal/plus-minus/minustotal`));
+
+
+        var hrHelwanPromise = get(child(dbRef, `branches/Helwan/hr/totalPoint`));
+        var advertisementsHelwanPromise = get(child(dbRef, `branches/Helwan/Advertisements/totalPoint`));
+        var DonateHelwanPromise = get(child(dbRef, `branches/Helwan/Donate/totalPoint`));
+        var DrcompetitionsHelwanPromise = get(child(dbRef, `branches/Helwan/Dr-competitions/totalPoint`));
+        var exhibitionsHelwanPromise = get(child(dbRef, `branches/Helwan/Exhibitions/totalPoint`));
+        var MarketHelwanPromise = get(child(dbRef, `branches/Helwan/MarketCommittee/totalPoint`));
+        var TelecomHelwanPromise = get(child(dbRef, `branches/Helwan/Telecom/totalPoint`));
+        var challengechampionsHelwanPromise = get(child(dbRef, `branches/Helwan/challenge-champions/totalPoint`));
+        var cubscommitteeHelwanPromise = get(child(dbRef, `branches/Helwan/cubs-committee/totalPoint`));
+        var feedingHelwanPromise = get(child(dbRef, `branches/Helwan/feeding/totalPoint`));
+        var followupHelwanPromise = get(child(dbRef, `branches/Helwan/follow-up/totalPoint`));
+        var reconstructionHelwanPromise = get(child(dbRef, `branches/Helwan/reconstruction/totalPoint`));
+        var teamHelwanPromise = get(child(dbRef, `branches/Helwan/team/totalPoint`));
+        var BonuHelwan = get(child(dbRef, `branches/Helwan/plus-minus/Bonustotal`));
+        var minuHelwan = get(child(dbRef, `branches/Helwan/plus-minus/minustotal`));
+
+
+        var hrMokattamPromise = get(child(dbRef, `branches/El Mokattam/hr/totalPoint`));
+        var advertisementsMokattamPromise = get(child(dbRef, `branches/El Mokattam/Advertisements/totalPoint`));
+        var DonateMokattamPromise = get(child(dbRef, `branches/El Mokattam/Donate/totalPoint`));
+        var DrcompetitionsMokattamPromise = get(child(dbRef, `branches/El Mokattam/Dr-competitions/totalPoint`));
+        var exhibitionsMokattamPromise = get(child(dbRef, `branches/El Mokattam/Exhibitions/totalPoint`));
+        var MarketMokattamPromise = get(child(dbRef, `branches/El Mokattam/MarketCommittee/totalPoint`));
+        var TelecomMokattamPromise = get(child(dbRef, `branches/El Mokattam/Telecom/totalPoint`));
+        var challengechampionsMokattamPromise = get(child(dbRef, `branches/El Mokattam/challenge-champions/totalPoint`));
+        var cubscommitteeMokattamPromise = get(child(dbRef, `branches/El Mokattam/cubs-committee/totalPoint`));
+        var feedingMokattamPromise = get(child(dbRef, `branches/El Mokattam/feeding/totalPoint`));
+        var followupMokattamPromise = get(child(dbRef, `branches/El Mokattam/follow-up/totalPoint`));
+        var reconstructionMokattamPromise = get(child(dbRef, `branches/El Mokattam/reconstruction/totalPoint`));
+        var teamMokattamPromise = get(child(dbRef, `branches/El Mokattam/team/totalPoint`));
+        var BonuMokattamn = get(child(dbRef, `branches/El Mokattam/plus-minus/Bonustotal`));
+        var minuMokattam = get(child(dbRef, `branches/El Mokattam/plus-minus/minustotal`));
+
+
+        var hrnaserPromise = get(child(dbRef, `branches/naser city/hr/totalPoint`));
+        var advertisementsnaserPromise = get(child(dbRef, `branches/naser city/Advertisements/totalPoint`));
+        var DonatenaserPromise = get(child(dbRef, `branches/naser city/Donate/totalPoint`));
+        var DrcompetitionsnaserPromise = get(child(dbRef, `branches/naser city/Dr-competitions/totalPoint`));
+        var exhibitionsnaserPromise = get(child(dbRef, `branches/naser city/Exhibitions/totalPoint`));
+        var MarketnaserPromise = get(child(dbRef, `branches/naser city/MarketCommittee/totalPoint`));
+        var TelecomnaserPromise = get(child(dbRef, `branches/naser city/Telecom/totalPoint`));
+        var challengechampionsnaserPromise = get(child(dbRef, `branches/naser city/challenge-champions/totalPoint`));
+        var cubscommitteenaserPromise = get(child(dbRef, `branches/naser city/cubs-committee/totalPoint`));
+        var feedingnaserPromise = get(child(dbRef, `branches/naser city/feeding/totalPoint`));
+        var followupnaserPromise = get(child(dbRef, `branches/naser city/follow-up/totalPoint`));
+        var reconstructionnaserPromise = get(child(dbRef, `branches/naser city/reconstruction/totalPoint`));
+        var teamnaserPromise = get(child(dbRef, `branches/naser city/team/totalPoint`));
+        var Bonunaser = get(child(dbRef, `branches/naser city/plus-minus/Bonustotal`));
+        var minunaser = get(child(dbRef, `branches/naser city/plus-minus/minustotal`));
+
+        var hrcairoPromise = get(child(dbRef, `branches/new cairo/hr/totalPoint`));
+        var advertisementscairoPromise = get(child(dbRef, `branches/new cairo/Advertisements/totalPoint`));
+        var DonatecairoPromise = get(child(dbRef, `branches/new cairo/Donate/totalPoint`));
+        var DrcompetitionscairoPromise = get(child(dbRef, `branches/new cairo/Dr-competitions/totalPoint`));
+        var exhibitionscairoPromise = get(child(dbRef, `branches/new cairo/Exhibitions/totalPoint`));
+        var MarketcairoPromise = get(child(dbRef, `branches/new cairo/MarketCommittee/totalPoint`));
+        var TelecomcairoPromise = get(child(dbRef, `branches/new cairo/Telecom/totalPoint`));
+        var challengechampionscairoPromise = get(child(dbRef, `branches/new cairo/challenge-champions/totalPoint`));
+        var cubscommitteecairoPromise = get(child(dbRef, `branches/new cairo/cubs-committee/totalPoint`));
+        var feedingcairoPromise = get(child(dbRef, `branches/new cairo/feeding/totalPoint`));
+        var followupcairoPromise = get(child(dbRef, `branches/new cairo/follow-up/totalPoint`));
+        var reconstructioncairoPromise = get(child(dbRef, `branches/new cairo/reconstruction/totalPoint`));
+        var teamcairoPromise = get(child(dbRef, `branches/new cairo/team/totalPoint`));
+        var Bonucairo = get(child(dbRef, `branches/new cairo/plus-minus/Bonustotal`));
+        var minucairo = get(child(dbRef, `branches/new cairo/plus-minus/minustotal`));
+
+
+        var hrOctoberomise = get(child(dbRef, `branches/October/hr/totalPoint`));
+        var advertisementsOctoberPromise = get(child(dbRef, `branches/October/Advertisements/totalPoint`));
+        var DonateOctoberPromise = get(child(dbRef, `branches/October/Donate/totalPoint`));
+        var DrcompetitionsOctoberPromise = get(child(dbRef, `branches/October/Dr-competitions/totalPoint`));
+        var exhibitionsOctoberPromise = get(child(dbRef, `branches/October/Exhibitions/totalPoint`));
+        var MarketOctoberPromise = get(child(dbRef, `branches/October/MarketCommittee/totalPoint`));
+        var TelecomOctoberPromise = get(child(dbRef, `branches/October/Telecom/totalPoint`));
+        var challengechampionsOctoberPromise = get(child(dbRef, `branches/October/challenge-champions/totalPoint`));
+        var cubscommitteeOctoberPromise = get(child(dbRef, `branches/October/cubs-committee/totalPoint`));
+        var feedingOctoberPromise = get(child(dbRef, `branches/October/feeding/totalPoint`));
+        var followupOctoberPromise = get(child(dbRef, `branches/October/follow-up/totalPoint`));
+        var reconstructionOctoberPromise = get(child(dbRef, `branches/October/reconstruction/totalPoint`));
+        var teamOctoberPromise = get(child(dbRef, `branches/October/team/totalPoint`));
+        var BonuOctober = get(child(dbRef, `branches/October/plus-minus/Bonustotal`));
+        var minuOctober = get(child(dbRef, `branches/October/plus-minus/minustotal`));
+
+
+        Promise.all([hrmaadiPromise, advertisementsmaadiPromise, DonatemaadiPromise, DrcompetitionsmaadiPromise, exhibitionsmaadiPromise,
+            MarketmaadiPromise, TelecommaadiPromise, challengechampionsmaadiPromise, cubscommitteemaadiPromise, feedingmaadiPromise,
+            followupmaadiPromise, reconstructionmaadiPromise, teammaadiPromise, hrMohandessinPromise, advertisementsMohandessinPromise, DonateMohandessinPromise, DrcompetitionsMohandessinPromise, exhibitionsMohandessinPromise,
+            MarketMohandessinPromise, TelecomMohandessinPromise, challengechampionsMohandessinPromise, cubscommitteeMohandessinPromise, feedingMohandessinPromise,
+            followupMohandessinPromise, reconstructionMohandessinPromise, teamMohandessinPromise, hralexPromise, advertisementsalexPromise, DonatealexPromise, DrcompetitionsalexPromise, exhibitionsalexPromise,
+            MarketalexPromise, TelecomalexPromise, challengechampionsalexPromise, cubscommitteealexPromise, feedingalexPromise,
+            followupalexPromise, reconstructionalexPromise, teamalexPromise, hrFaisalPromise, advertisementsFaisalPromise, DonateFaisalPromise, DrcompetitionsFaisalPromise, exhibitionsFaisalPromise,
+            MarketFaisalPromise, TelecomFaisalPromise, challengechampionsFaisalPromise, cubscommitteeFaisalPromise, feedingFaisalPromise,
+            followupFaisalPromise, reconstructionFaisalPromise, teamFaisalPromise, hrHelwanPromise, advertisementsHelwanPromise, DonateHelwanPromise, DrcompetitionsHelwanPromise, exhibitionsHelwanPromise,
+            MarketHelwanPromise, TelecomHelwanPromise, challengechampionsHelwanPromise, cubscommitteeHelwanPromise, feedingHelwanPromise,
+            followupHelwanPromise, reconstructionHelwanPromise, teamHelwanPromise, BonusMaadi, minusMaadi, BonusMohandessin, minusMohandessin, Bonusalex, minusalex,
+            BonuFaisal, minuFaisal, BonuHelwan, minuHelwan, hrMokattamPromise, advertisementsMokattamPromise, DonateMokattamPromise, DrcompetitionsMokattamPromise, exhibitionsMokattamPromise,
+            MarketMokattamPromise, TelecomMokattamPromise, challengechampionsMokattamPromise, cubscommitteeMokattamPromise, feedingMokattamPromise,
+            followupMokattamPromise, reconstructionMokattamPromise, teamMokattamPromise, BonuMokattamn, minuMokattam, hrnaserPromise, advertisementsnaserPromise, DonatenaserPromise, DrcompetitionsnaserPromise, exhibitionsnaserPromise,
+            MarketnaserPromise, TelecomnaserPromise, challengechampionsnaserPromise, cubscommitteenaserPromise, feedingnaserPromise,
+            followupnaserPromise, reconstructionnaserPromise, teamnaserPromise, Bonunaser, minunaser, hrcairoPromise, advertisementscairoPromise, DonatecairoPromise, DrcompetitionscairoPromise, exhibitionscairoPromise,
+            MarketcairoPromise, TelecomcairoPromise, challengechampionscairoPromise, cubscommitteecairoPromise, feedingcairoPromise,
+            followupcairoPromise, reconstructioncairoPromise, teamcairoPromise, Bonucairo, minucairo, hrOctoberomise, advertisementsOctoberPromise, DonateOctoberPromise, DrcompetitionsOctoberPromise, exhibitionsOctoberPromise,
+            MarketOctoberPromise, TelecomOctoberPromise, challengechampionsOctoberPromise, cubscommitteeOctoberPromise, feedingOctoberPromise,
+            followupOctoberPromise, reconstructionOctoberPromise, teamOctoberPromise, BonuOctober, minuOctober])
+            .then((snapshots) => {
+                var hrmaadi = snapshots[0].exists() ? snapshots[0].val() : 0;
+                var advertisementsmaadi = snapshots[1].exists() ? snapshots[1].val() : 0;
+                var Donatemaadi = snapshots[2].exists() ? snapshots[2].val() : 0;
+                var DrcompetitionsmaadiPromise = snapshots[3].exists() ? snapshots[3].val() : 0;
+                var exhibitionsmaadiPromise = snapshots[4].exists() ? snapshots[4].val() : 0;
+                var MarketmaadiPromise = snapshots[5].exists() ? snapshots[5].val() : 0;
+                var TelecommaadiPromise = snapshots[6].exists() ? snapshots[6].val() : 0;
+                var challengechampionsmaadiPromise = snapshots[7].exists() ? snapshots[7].val() : 0;
+                var cubscommitteemaadiPromise = snapshots[8].exists() ? snapshots[8].val() : 0;
+                var feedingmaadiPromise = snapshots[9].exists() ? snapshots[9].val() : 0;
+                var followupmaadiPromise = snapshots[10].exists() ? snapshots[10].val() : 0;
+                var reconstructionmaadiPromise = snapshots[11].exists() ? snapshots[11].val() : 0;
+                var teammaadiPromise = snapshots[12].exists() ? snapshots[12].val() : 0;
+                var BonusMaadi = snapshots[65].exists() ? snapshots[65].val() : 0;
+                var minusMaadi = snapshots[66].exists() ? snapshots[66].val() : 0;
+
+                var hrMohandessin = snapshots[13].exists() ? snapshots[13].val() : 0;
+                var advertisementsMohandessin = snapshots[14].exists() ? snapshots[14].val() : 0;
+                var DonateMohandessin = snapshots[15].exists() ? snapshots[15].val() : 0;
+                var DrcompetitionsMohandessinPromise = snapshots[16].exists() ? snapshots[16].val() : 0;
+                var exhibitionsMohandessinPromise = snapshots[17].exists() ? snapshots[17].val() : 0;
+                var MarketMohandessinPromise = snapshots[18].exists() ? snapshots[18].val() : 0;
+                var TelecomMohandessinPromise = snapshots[19].exists() ? snapshots[19].val() : 0;
+                var challengechampionsMohandessinPromise = snapshots[20].exists() ? snapshots[20].val() : 0;
+                var cubscommitteeMohandessinPromise = snapshots[21].exists() ? snapshots[21].val() : 0;
+                var feedingMohandessinPromise = snapshots[22].exists() ? snapshots[22].val() : 0;
+                var followupMohandessinPromise = snapshots[23].exists() ? snapshots[23].val() : 0;
+                var reconstructionMohandessinPromise = snapshots[24].exists() ? snapshots[24].val() : 0;
+                var teamMohandessinPromise = snapshots[25].exists() ? snapshots[25].val() : 0;
+                var BonusMohandessin = snapshots[67].exists() ? snapshots[67].val() : 0;
+                var minusMohandessin = snapshots[68].exists() ? snapshots[68].val() : 0;
+
+                var hralex = snapshots[26].exists() ? snapshots[26].val() : 0;
+                var advertisementsalex = snapshots[27].exists() ? snapshots[27].val() : 0;
+                var Donatealex = snapshots[28].exists() ? snapshots[28].val() : 0;
+                var DrcompetitionsalexPromise = snapshots[29].exists() ? snapshots[29].val() : 0;
+                var exhibitionsalexPromise = snapshots[30].exists() ? snapshots[30].val() : 0;
+                var MarketalexPromise = snapshots[31].exists() ? snapshots[31].val() : 0;
+                var TelecomalexPromise = snapshots[32].exists() ? snapshots[32].val() : 0;
+                var challengechampionsalexPromise = snapshots[33].exists() ? snapshots[33].val() : 0;
+                var cubscommitteealexPromise = snapshots[34].exists() ? snapshots[34].val() : 0;
+                var feedingalexPromise = snapshots[35].exists() ? snapshots[35].val() : 0;
+                var followupalexPromise = snapshots[36].exists() ? snapshots[36].val() : 0;
+                var reconstructionalexPromise = snapshots[37].exists() ? snapshots[37].val() : 0;
+                var teamalexPromise = snapshots[38].exists() ? snapshots[38].val() : 0;
+                var Bonusalex = snapshots[69].exists() ? snapshots[69].val() : 0;
+                var minusalex = snapshots[70].exists() ? snapshots[70].val() : 0;
+
+                var hrFaisal = snapshots[39].exists() ? snapshots[39].val() : 0;
+                var advertisementsFaisal = snapshots[40].exists() ? snapshots[40].val() : 0;
+                var DonateFaisal = snapshots[41].exists() ? snapshots[41].val() : 0;
+                var DrcompetitionsFaisalPromise = snapshots[42].exists() ? snapshots[42].val() : 0;
+                var exhibitionsFaisalPromise = snapshots[43].exists() ? snapshots[43].val() : 0;
+                var MarketFaisalPromise = snapshots[44].exists() ? snapshots[44].val() : 0;
+                var TelecomFaisalPromise = snapshots[45].exists() ? snapshots[45].val() : 0;
+                var challengechampionsFaisalPromise = snapshots[46].exists() ? snapshots[46].val() : 0;
+                var cubscommitteeFaisalPromise = snapshots[47].exists() ? snapshots[47].val() : 0;
+                var feedingFaisalPromise = snapshots[48].exists() ? snapshots[48].val() : 0;
+                var followupFaisalPromise = snapshots[49].exists() ? snapshots[49].val() : 0;
+                var reconstructionFaisalPromise = snapshots[50].exists() ? snapshots[50].val() : 0;
+                var teamFaisalPromise = snapshots[51].exists() ? snapshots[51].val() : 0;
+                var BonuFaisal = snapshots[71].exists() ? snapshots[71].val() : 0;
+                var minuFaisal = snapshots[72].exists() ? snapshots[72].val() : 0;
+
+
+                var hrHelwan = snapshots[52].exists() ? snapshots[52].val() : 0;
+                var advertisementsHelwan = snapshots[53].exists() ? snapshots[53].val() : 0;
+                var DonateHelwan = snapshots[54].exists() ? snapshots[54].val() : 0;
+                var DrcompetitionsHelwanPromise = snapshots[55].exists() ? snapshots[55].val() : 0;
+                var exhibitionsHelwanPromise = snapshots[56].exists() ? snapshots[56].val() : 0;
+                var MarketHelwanPromise = snapshots[57].exists() ? snapshots[57].val() : 0;
+                var TelecomHelwanPromise = snapshots[58].exists() ? snapshots[58].val() : 0;
+                var challengechampionsHelwanPromise = snapshots[59].exists() ? snapshots[59].val() : 0;
+                var cubscommitteeHelwanPromise = snapshots[60].exists() ? snapshots[60].val() : 0;
+                var feedingHelwanPromise = snapshots[61].exists() ? snapshots[61].val() : 0;
+                var followupHelwanPromise = snapshots[62].exists() ? snapshots[62].val() : 0;
+                var reconstructionHelwanPromise = snapshots[63].exists() ? snapshots[63].val() : 0;
+                var teamHelwanPromise = snapshots[64].exists() ? snapshots[64].val() : 0;
+                var BonuHelwan = snapshots[73].exists() ? snapshots[73].val() : 0;
+                var minuHelwan = snapshots[74].exists() ? snapshots[74].val() : 0;
+
+
+                var hrMokattam = snapshots[75].exists() ? snapshots[75].val() : 0;
+                var advertisementsMokattam = snapshots[76].exists() ? snapshots[76].val() : 0;
+                var DonateMokattam = snapshots[77].exists() ? snapshots[77].val() : 0;
+                var DrcompetitionsMokattamPromise = snapshots[78].exists() ? snapshots[78].val() : 0;
+                var exhibitionsMokattamPromise = snapshots[79].exists() ? snapshots[79].val() : 0;
+                var MarketMokattamPromise = snapshots[80].exists() ? snapshots[80].val() : 0;
+                var TelecomMokattamPromise = snapshots[81].exists() ? snapshots[81].val() : 0;
+                var challengechampionsMokattamPromise = snapshots[82].exists() ? snapshots[82].val() : 0;
+                var cubscommitteeMokattamPromise = snapshots[83].exists() ? snapshots[83].val() : 0;
+                var feedingMokattamPromise = snapshots[84].exists() ? snapshots[84].val() : 0;
+                var followupMokattamPromise = snapshots[85].exists() ? snapshots[85].val() : 0;
+                var reconstructionMokattamPromise = snapshots[86].exists() ? snapshots[86].val() : 0;
+                var teamMokattamPromise = snapshots[87].exists() ? snapshots[87].val() : 0;
+                var BonuMokattam = snapshots[88].exists() ? snapshots[88].val() : 0;
+                var minuMokattam = snapshots[89].exists() ? snapshots[89].val() : 0;
+
+
+                var hrnaser = snapshots[90].exists() ? snapshots[90].val() : 0;
+                var advertisementsnaser = snapshots[91].exists() ? snapshots[91].val() : 0;
+                var Donatenaser = snapshots[92].exists() ? snapshots[92].val() : 0;
+                var DrcompetitionsnaserPromise = snapshots[93].exists() ? snapshots[93].val() : 0;
+                var exhibitionsnaserPromise = snapshots[94].exists() ? snapshots[94].val() : 0;
+                var MarketnaserPromise = snapshots[95].exists() ? snapshots[95].val() : 0;
+                var TelecomnaserPromise = snapshots[96].exists() ? snapshots[96].val() : 0;
+                var challengechampionsnaserPromise = snapshots[97].exists() ? snapshots[97].val() : 0;
+                var cubscommitteenaserPromise = snapshots[98].exists() ? snapshots[98].val() : 0;
+                var feedingnaserPromise = snapshots[99].exists() ? snapshots[99].val() : 0;
+                var followupnaserPromise = snapshots[100].exists() ? snapshots[100].val() : 0;
+                var reconstructionnaserPromise = snapshots[101].exists() ? snapshots[101].val() : 0;
+                var teamnaserPromise = snapshots[102].exists() ? snapshots[102].val() : 0;
+                var Bonunaser = snapshots[103].exists() ? snapshots[103].val() : 0;
+                var minunaser = snapshots[104].exists() ? snapshots[104].val() : 0;
+
+                var hrcairo = snapshots[105].exists() ? snapshots[105].val() : 0;
+                var advertisementscairo = snapshots[106].exists() ? snapshots[106].val() : 0;
+                var Donatecairo = snapshots[107].exists() ? snapshots[107].val() : 0;
+                var DrcompetitionscairoPromise = snapshots[108].exists() ? snapshots[108].val() : 0;
+                var exhibitionscairoPromise = snapshots[109].exists() ? snapshots[109].val() : 0;
+                var MarketcairoPromise = snapshots[110].exists() ? snapshots[110].val() : 0;
+                var TelecomcairoPromise = snapshots[111].exists() ? snapshots[111].val() : 0;
+                var challengechampionscairoPromise = snapshots[112].exists() ? snapshots[112].val() : 0;
+                var cubscommitteecairoPromise = snapshots[113].exists() ? snapshots[113].val() : 0;
+                var feedingcairoPromise = snapshots[114].exists() ? snapshots[114].val() : 0;
+                var followupcairoPromise = snapshots[115].exists() ? snapshots[115].val() : 0;
+                var reconstructioncairoPromise = snapshots[116].exists() ? snapshots[116].val() : 0;
+                var teamcairoPromise = snapshots[117].exists() ? snapshots[117].val() : 0;
+                var Bonucairo = snapshots[118].exists() ? snapshots[118].val() : 0;
+                var minucairo = snapshots[119].exists() ? snapshots[119].val() : 0;
+
+
+                var hrOctober = snapshots[120].exists() ? snapshots[120].val() : 0;
+                var advertisementsOctober = snapshots[121].exists() ? snapshots[121].val() : 0;
+                var DonateOctober = snapshots[122].exists() ? snapshots[122].val() : 0;
+                var DrcompetitionsOctoberPromise = snapshots[123].exists() ? snapshots[123].val() : 0;
+                var exhibitionsOctoberPromise = snapshots[124].exists() ? snapshots[124].val() : 0;
+                var MarketOctoberPromise = snapshots[125].exists() ? snapshots[125].val() : 0;
+                var TelecomOctoberPromise = snapshots[126].exists() ? snapshots[126].val() : 0;
+                var challengechampionsOctoberPromise = snapshots[127].exists() ? snapshots[127].val() : 0;
+                var cubscommitteeOctoberPromise = snapshots[128].exists() ? snapshots[128].val() : 0;
+                var feedingOctoberPromise = snapshots[129].exists() ? snapshots[129].val() : 0;
+                var followupOctoberPromise = snapshots[130].exists() ? snapshots[130].val() : 0;
+                var reconstructionOctoberPromise = snapshots[131].exists() ? snapshots[131].val() : 0;
+                var teamOctoberPromise = snapshots[132].exists() ? snapshots[132].val() : 0;
+                var BonuOctober = snapshots[133].exists() ? snapshots[133].val() : 0;
+                var minuOctober = snapshots[134].exists() ? snapshots[134].val() : 0;
+
+
+                var totalMaad = (hrmaadi + advertisementsmaadi + Donatemaadi + DrcompetitionsmaadiPromise + exhibitionsmaadiPromise + feedingmaadiPromise + cubscommitteemaadiPromise + challengechampionsmaadiPromise + TelecommaadiPromise + MarketmaadiPromise + teammaadiPromise + reconstructionmaadiPromise + followupmaadiPromise + BonusMaadi - minusMaadi);
+                var totalMohand = (hrMohandessin + advertisementsMohandessin + DonateMohandessin + DrcompetitionsMohandessinPromise + exhibitionsMohandessinPromise + feedingMohandessinPromise + cubscommitteeMohandessinPromise + challengechampionsMohandessinPromise + TelecomMohandessinPromise + MarketMohandessinPromise + teamMohandessinPromise + reconstructionMohandessinPromise + followupMohandessinPromise + BonusMohandessin - minusMohandessin);
+                var totalalx = (hralex + advertisementsalex + Donatealex + DrcompetitionsalexPromise + exhibitionsalexPromise + feedingalexPromise + cubscommitteealexPromise + challengechampionsalexPromise + TelecomalexPromise + MarketalexPromise + teamalexPromise + reconstructionalexPromise + followupalexPromise + Bonusalex - minusalex);
+                var totalFais = (hrFaisal + advertisementsFaisal + DonateFaisal + DrcompetitionsFaisalPromise + exhibitionsFaisalPromise + feedingFaisalPromise + cubscommitteeFaisalPromise + challengechampionsFaisalPromise + TelecomFaisalPromise + MarketFaisalPromise + teamFaisalPromise + reconstructionFaisalPromise + followupFaisalPromise + BonuFaisal - minuFaisal);
+                var totalHelw = (hrHelwan + advertisementsHelwan + DonateHelwan + DrcompetitionsHelwanPromise + exhibitionsHelwanPromise + feedingHelwanPromise + cubscommitteeHelwanPromise + challengechampionsHelwanPromise + TelecomHelwanPromise + MarketHelwanPromise + teamHelwanPromise + reconstructionHelwanPromise + followupHelwanPromise + BonuHelwan - minuHelwan);
+                var totalMokat = (hrMokattam + advertisementsMokattam + DonateMokattam + DrcompetitionsMokattamPromise + exhibitionsMokattamPromise + feedingMokattamPromise + cubscommitteeMokattamPromise + challengechampionsMokattamPromise + TelecomMokattamPromise + MarketMokattamPromise + teamMokattamPromise + reconstructionMokattamPromise + followupMokattamPromise + BonuMokattam - minuMokattam);
+                var totalnaser = (hrnaser + advertisementsnaser + Donatenaser + DrcompetitionsnaserPromise + exhibitionsnaserPromise + feedingnaserPromise + cubscommitteenaserPromise + challengechampionsnaserPromise + TelecomnaserPromise + MarketnaserPromise + teamnaserPromise + reconstructionnaserPromise + followupnaserPromise + Bonunaser - minunaser);
+                var totalcairo = (hrcairo + advertisementscairo + Donatecairo + DrcompetitionscairoPromise + exhibitionscairoPromise + feedingcairoPromise + cubscommitteecairoPromise + challengechampionscairoPromise + TelecomcairoPromise + MarketcairoPromise + teamcairoPromise + reconstructioncairoPromise + followupcairoPromise + Bonucairo - minucairo);
+                var totaloct = (hrOctober + advertisementsOctober + DonateOctober + DrcompetitionsOctoberPromise + exhibitionsOctoberPromise + feedingOctoberPromise + cubscommitteeOctoberPromise + challengechampionsOctoberPromise + TelecomOctoberPromise + MarketOctoberPromise + teamOctoberPromise + reconstructionOctoberPromise + followupOctoberPromise + BonuOctober - minuOctober);
+                console.log("total Month 12: " + totalFais)
+                // Update HTML elements
+                if (commettie == "hr") {
+                    drawBasic(hrmaadi, hrMohandessin, hralex, hrFaisal, hrHelwan, hrMokattam, hrnaser, hrcairo, hrOctober);
+                } else if (commettie == "Advertisements") {
+                    drawBasic(advertisementsmaadi, advertisementsMohandessin, advertisementsalex, advertisementsFaisal, advertisementsHelwan, advertisementsMokattam, advertisementsnaser, advertisementscairo, advertisementsOctober);
+                } else if (commettie == "Donate") {
+                    drawBasic(Donatemaadi, DonateMohandessin, Donatealex, DonateFaisal, DonateHelwan, DonateMokattam, Donatenaser, Donatecairo, DonateOctober);
+                } else if (commettie == "Dr-competitions") {
+                    drawBasic(DrcompetitionsmaadiPromise, DonateMohandessin, DrcompetitionsalexPromise, DrcompetitionsFaisalPromise, DrcompetitionsHelwanPromise, DrcompetitionsMokattamPromise, DrcompetitionsnaserPromise, DrcompetitionscairoPromise, DrcompetitionsOctoberPromise);
+                } else if (commettie == "Exhibitions") {
+                    drawBasic(exhibitionsmaadiPromise, exhibitionsMohandessinPromise, exhibitionsalexPromise, exhibitionsFaisalPromise, exhibitionsHelwanPromise, exhibitionsMokattamPromise, exhibitionsnaserPromise, exhibitionscairoPromise, exhibitionsOctoberPromise);
+                } else if (commettie == "feeding") {
+                    drawBasic(feedingmaadiPromise, feedingMohandessinPromise, feedingalexPromise, feedingFaisalPromise, feedingHelwanPromise, feedingMokattamPromise, feedingnaserPromise, feedingcairoPromise, feedingOctoberPromise);
+                } else if (commettie == "cubs-committee") {
+                    drawBasic(cubscommitteemaadiPromise, cubscommitteeMohandessinPromise, cubscommitteealexPromise, cubscommitteeFaisalPromise, cubscommitteeHelwanPromise, cubscommitteeMokattamPromise, cubscommitteenaserPromise, cubscommitteecairoPromise, cubscommitteeOctoberPromise);
+                } else if (commettie == "challenge-champions") {
+                    drawBasic(challengechampionsmaadiPromise, challengechampionsMohandessinPromise, challengechampionsalexPromise, challengechampionsFaisalPromise, challengechampionsHelwanPromise, challengechampionsMokattamPromise, challengechampionsnaserPromise, challengechampionscairoPromise, challengechampionsOctoberPromise);
+                } else if (commettie == "Telecom") {
+                    drawBasic(TelecommaadiPromise, TelecomMohandessinPromise, TelecomalexPromise, TelecomFaisalPromise, TelecomHelwanPromise, TelecomMokattamPromise, TelecomnaserPromise, TelecomcairoPromise, TelecomOctoberPromise);
+                } else if (commettie == "MarketCommittee") {
+                    drawBasic(MarketmaadiPromise, MarketMohandessinPromise, MarketalexPromise, MarketFaisalPromise, MarketHelwanPromise, MarketMokattamPromise, MarketnaserPromise, MarketcairoPromise, MarketOctoberPromise);
+                } else if (commettie == "team") {
+                    drawBasic(teammaadiPromise, teamMohandessinPromise, teamalexPromise, teamFaisalPromise, teamHelwanPromise, teamMokattamPromise, teamnaserPromise, teamcairoPromise, teamOctoberPromise);
+                } else if (commettie == "reconstruction") {
+                    drawBasic(reconstructionmaadiPromise, reconstructionMohandessinPromise, reconstructionalexPromise, reconstructionFaisalPromise, reconstructionHelwanPromise, reconstructionMokattamPromise, reconstructionnaserPromise, reconstructioncairoPromise, reconstructionOctoberPromise);
+                } else if (commettie == "follow-up") {
+                    drawBasic(followupmaadiPromise, followupMohandessinPromise, followupalexPromise, followupFaisalPromise, followupHelwanPromise, followupMokattamPromise, followupnaserPromise, followupcairoPromise, followupOctoberPromise);
+                }
+                else {
+                    alert("not hr");
+                }
+
+
+                // Do further processing with the finalTotal value
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
+        function drawBasic(Maad, Mohand, alalx, Fais, Helw, Mokat, naser, cairo, oct) {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Branch', ' total Point',],
+                ['المعادى', Maad],
+                ['الاسكندرية', alalx],
+                ['أكتوبر', oct],
+                ['مدينة نصر', naser],
+                ['مصر الجديدة', cairo],
+                ['المقطم', Mokat],
+                ['حلوان', Helw],
+                ['فيصل', Fais],
+                ['المهندسين', Mohand],
+            ]);
+
+            var options = {
+                title: commettie,
+                // chartArea: { width: '50%' },
+                hAxis: {
+                    title: 'Total Point',
+                    minValue: 0
+                },
+                vAxis: {
+                    title: 'الفروع'
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
+    }
+
+
+</script>
+
+</html>

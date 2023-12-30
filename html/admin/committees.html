@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/resalalogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/home.css">
+    <title>Committees Menu</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1 id="tit">Resala Committees</h1>
+        <!-- ======================= Cards ================== -->
+        <div class="container">
+            <div class="cardBox">
+                <div class="carddd">
+                    <div>
+                        <div class="numbers" id="total">1,504</div>
+                        <div class="cardName">Total point</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="carddd">
+                    <div>
+                        <div class="numbers" id="Bonustotal">80</div>
+                        <div class="cardName">Bonus</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="carddd">
+                    <div>
+                        <div class="numbers" id="minustotal">284</div>
+                        <div class="cardName">minus</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="remove-circle-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <div class="container text-center">
+                <div class="row justify-content-center"> -->
+            <div class="chartsBx">
+                <div id="piechart" style="width: 550px; height: 450px;" class="chart"></div>
+                <div id="line_top_x" class="chart" style="width: 550px; height: 450px;"></div>
+            </div>
+            <!-- </div>
+            </div> -->
+            <div class="box">
+                <img src="../../assets/hr.png" alt="">
+                <h3>HR</h3>
+                <div>
+                    <progress value="0" max="100" id="hr"></progress>
+                </div>
+                <a href="./hrCommittees.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Telecom.png" alt="">
+                <h3>اتصالات</h3>
+
+                <div>
+                    <progress value="0" max="100" id="Telecom"></progress>
+                </div>
+                <a href="./Telecom.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/tracking.jpg" alt="">
+                <h3>المتابعة</h3>
+                <div>
+                    <progress value="0" max="100" id="follow-up"></progress>
+                </div>
+
+                <a href="./follow-up.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Exhibitions.jpg" alt="">
+                <h3>المعارض</h3>
+                <div>
+                    <progress value="0" max="100" id="Exhibitions"></progress>
+                </div>
+                <a href="./Exhibitions.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/feeding.jpg" alt="">
+                <h3> لجنة الإطعام</h3>
+                <div>
+                    <progress value="0" max="100" id="feeding"></progress>
+                </div>
+
+                <a href="./feeding.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/clothes.jpg" alt="">
+                <h3>الفرق</h3>
+                <div>
+                    <progress value="0" max="100" id="team"></progress>
+                </div>
+
+                <a href="./team.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Challenge champions.jpg" alt="">
+                <h3>أبطال التحدى</h3>
+                <div>
+                    <progress value="0" max="100" id="challenge-champions"></progress>
+                </div>
+                <a href="./challenge-champions.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Advertisements.jpg" alt="">
+                <h3>الدعايا</h3>
+
+                <div>
+                    <progress value="0" max="100" id="Advertisements"></progress>
+                </div>
+                <a href="./AdvertisementsCommitte.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Youth Committee.jpg" alt="">
+                <h3>لجنة الأشبال</h3>
+                <div>
+                    <progress value="0" max="100" id="cubs"></progress>
+                </div>
+                <a href="./cubsCommittees.html" class="btn">اضغط هنا</a>
+            </div>
+            <div class="box">
+                <img src="../../assets/Dr. competition.jpg" alt="">
+                <h3>مسابقة الدكتور</h3>
+                <div>
+                    <progress value="0" max="100" id="Dr-competitions"></progress>
+                </div>
+                <a href="./Dr-competitions.html" class="btn">اضغط هنا</a>
+            </div>
+
+            <div class="box">
+                <img src="../../assets/Charity Market.jpeg" alt="">
+                <h3>لجنة السوق الخيري</h3>
+                <div>
+                    <progress value="0" max="100" id="MarketCommittee"></progress>
+                </div>
+                <a href="./MarketCommittee.html" class="btn">اضغط هنا</a>
+            </div>
+
+            <div class="box">
+                <img src="../../assets/Reconstruction.png" alt="">
+                <h3>لجنة الإعمار</h3>
+                <div>
+                    <progress value="0" max="100" id="reconstruction"></progress>
+                </div>
+                <a href="./reconstruction.html" class="btn">اضغط هنا</a>
+            </div>
+
+            <div class="box">
+                <img src="../../assets/Donations.png" alt="">
+                <h3>التبرعات</h3>
+                <div>
+                    <progress value="0" max="100" id="Donate"></progress>
+                </div>
+                <a href="./Donate.html" class="btn">اضغط هنا</a>
+            </div>
+
+            <div class="box">
+                <img src="../../assets/plus and minus.jpg" alt="">
+                <h3>سياسة البونص والماينص</h3>
+                <div>
+                    <br>
+                </div>
+                <a href="./plus-minus.html" class="btn" style="margin-top: 30px;">اضغط هنا</a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- ====== ionicons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../../JS/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../../JS/main.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyC7oeKjthByrRm6EoF0gl5wjY528j4aWMM",
+        authDomain: "resala-cup.firebaseapp.com",
+        databaseURL: "https://resala-cup-default-rtdb.firebaseio.com",
+        projectId: "resala-cup",
+        storageBucket: "resala-cup.appspot.com",
+        messagingSenderId: "920754872696",
+        appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    var branch = localStorage.getItem("branch");
+    document.getElementById("tit").textContent = "Resala Committees " + branch + " branch";
+
+    const dbRef = ref(db);
+    var totalHr;
+    get(child(dbRef, `branches/${branch}/hr/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+
+            var progressElement = document.getElementById("hr");
+            if (parseInt((parseInt(totalHr) / 224000) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 224000) * 100);
+            }
+            // progressBar.style.color = 'white';
+            console.log(parseInt((parseInt(totalHr) / 224000) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/Telecom/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+
+            var progressElement = document.getElementById("Telecom");
+            if (parseInt((parseInt(totalHr) / 41600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 41600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 41600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/follow-up/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+
+            var progressElement = document.getElementById("follow-up");
+            if (parseInt((parseInt(totalHr) / 25200) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 48800) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 48800) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/Exhibitions/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+
+            var progressElement = document.getElementById("Exhibitions");
+            if (parseInt((parseInt(totalHr) / 29600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 29600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 29600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/feeding/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+            var progressElement = document.getElementById("feeding");
+            if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/team/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+
+            var progressElement = document.getElementById("team");
+            if (parseInt((parseInt(totalHr) / 54800) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 54800) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 54800) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/Advertisements/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+
+            var progressElement = document.getElementById("Advertisements");
+            if (parseInt((parseInt(totalHr) / 18800) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 18800) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 18800) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/cubs-committee/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+
+            var progressElement = document.getElementById("cubs");
+            if (parseInt((parseInt(totalHr) / 21600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 21600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 21600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/Dr-competitions/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+
+            var progressElement = document.getElementById("Dr-competitions");
+            if (parseInt((parseInt(totalHr) / 40000) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 40000) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 40000) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/MarketCommittee/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+            var progressElement = document.getElementById("MarketCommittee");
+            if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/reconstruction/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+
+            var progressElement = document.getElementById("reconstruction");
+            if (parseInt((parseInt(totalHr) / 25600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 25600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 25600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/Donate/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+
+            var progressElement = document.getElementById("Donate");
+            if (parseInt((parseInt(totalHr) / 9400) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 9400) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 9400) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/challenge-champions/totalPoint`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            totalHr = snapshot.val();
+            var totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+
+            var progressElement = document.getElementById("challenge-champions");
+            if (parseInt((parseInt(totalHr) / 19600) * 100) > 100) {
+                progressElement.value = 100;
+            } else {
+                progressElement.value = parseInt((parseInt(totalHr) / 19600) * 100);
+            }
+            console.log(parseInt((parseInt(totalHr) / 19600) * 100));
+
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    Promise.all([
+        get(child(dbRef, `branches/${branch}/hr/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/Telecom/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/follow-up/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/Exhibitions/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/feeding/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/team/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/Advertisements/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/cubs-committee/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/Dr-competitions/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/MarketCommittee/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/reconstruction/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/Donate/totalPoint`)),
+        get(child(dbRef, `branches/${branch}/challenge-champions/totalPoint`))
+    ])
+        .then((snapshots) => {
+            const data = [];
+
+            snapshots.forEach((snapshot, index) => {
+                if (snapshot.exists()) {
+                    const totalHr = snapshot.val();
+                    let totalHrpercent;
+
+                    switch (index) {
+                        case 0:
+                            if (parseInt((parseInt(totalHr) / 224000) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 224000) * 100);
+                            }
+                            break;
+                        case 1:
+                            if (parseInt((parseInt(totalHr) / 41600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 41600) * 100);
+                            }
+                            break;
+                        case 2:
+                            if (parseInt((parseInt(totalHr) / 48800) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 48800) * 100);
+                            }
+                            break;
+                        case 3:
+                            if (parseInt((parseInt(totalHr) / 29600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 29600) * 100);
+                            }
+                            break;
+                        case 4:
+                            if (parseInt((parseInt(totalHr) / 25600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+                            }
+                            break;
+                        case 5:
+                            if (parseInt((parseInt(totalHr) / 54800) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 54800) * 100);
+                            }
+                            break;
+                        case 6:
+                            if (parseInt((parseInt(totalHr) / 18800) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 18800) * 100);
+                            }
+                            break;
+                        case 7:
+                            if (parseInt((parseInt(totalHr) / 21600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 21600) * 100);
+                            }
+                            break;
+                        case 8:
+                            if (parseInt((parseInt(totalHr) / 40000) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 40000) * 100);
+                            }
+
+                            break;
+                        case 9:
+                            if (parseInt((parseInt(totalHr) / 25600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+                            }
+
+                            break;
+                        case 10:
+                            if (parseInt((parseInt(totalHr) / 25600) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 25600) * 100);
+                            }
+
+                            break;
+                        case 11:
+                            if (parseInt((parseInt(totalHr) / 9400) * 100) >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 9400) * 100);
+                            }
+
+                            break;
+                        case 12:
+                            if (parseInt((parseInt(totalHr) / 9400) * 100) >= 100 >= 100) {
+                                totalHrpercent = 100;
+                            } else {
+                                totalHrpercent = parseInt((parseInt(totalHr) / 19600) * 100);
+                            }
+
+                            break;
+                        default:
+                            totalHrpercent = 0;
+                            break;
+                    }
+
+                    data.push({
+                        label: getLabel(index),
+                        percent: totalHrpercent,
+                    });
+                } else {
+                    console.log("No data available");
+                }
+            });
+
+            if (data.length > 0) {
+                google.charts.load('current', { 'packages': ['corechart'] });
+                google.charts.setOnLoadCallback(() => drawChart(data));
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+    function drawChart(data) {
+        const chartData = [['Task', 'Percent']];
+        data.forEach((item) => {
+            chartData.push([item.label, item.percent]);
+        });
+
+        const options = {
+            title: 'Percentage of committees in ' + branch + ' branch'
+        };
+
+        const chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(google.visualization.arrayToDataTable(chartData), options);
+    }
+
+    function getLabel(index) {
+        switch (index) {
+            case 0:
+                return 'HR';
+            case 1:
+                return 'لجنة الاتصالات';
+            case 2:
+                return 'لجنة المتابعة';
+            case 3:
+                return 'لجنة المعارض';
+            case 4:
+                return 'الإطعام';
+            case 5:
+                return 'لجنة الفرق';
+            case 6:
+                return 'لجنة الدعايا';
+            case 7:
+                return 'لجنة الاشبال';
+            case 8:
+                return 'مسابقة الدكتور';
+            case 9:
+                return 'لجنة السوق الخيري';
+            case 10:
+                return 'لجنة الإعمار';
+            case 11:
+                return 'التبرعات';
+            case 12:
+                return 'أبطال التحدى';
+
+            default:
+                return '';
+
+        }
+    }
+
+    get(child(dbRef, `branches/${branch}/plus-minus/Bonustotal`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("Bonustotal").innerHTML = snapshot.val();
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    get(child(dbRef, `branches/${branch}/plus-minus/minustotal`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            document.getElementById("minustotal").innerHTML = ("-" + snapshot.val());
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+
+    var totalPoints = [];
+    var totalPointSum = 0;
+
+    function retrieveTotalPoint(childPath, index) {
+        return new Promise((resolve, reject) => {
+            get(child(dbRef, `branches/${branch}/${childPath}/totalPoint`))
+                .then((snapshot) => {
+                    if (snapshot.exists()) {
+                        console.log(snapshot.val());
+                        totalPoints[index] = snapshot.val();
+                        resolve();
+                    } else {
+                        console.log("No data available");
+                        reject();
+                    }
+                })
+                .catch((error) => {
+                    console.error(error);
+                    reject();
+                });
+        });
+    }
+
+    Promise.all([
+        retrieveTotalPoint("hr", 0),
+        retrieveTotalPoint("Telecom", 1),
+        retrieveTotalPoint("Advertisements", 2),
+        retrieveTotalPoint("Donate", 3),
+        retrieveTotalPoint("Dr-competitions", 4),
+        retrieveTotalPoint("Exhibitions", 5),
+        retrieveTotalPoint("MarketCommittee", 6),
+        retrieveTotalPoint("challenge-champions", 7),
+        retrieveTotalPoint("cubs-committee", 8),
+        retrieveTotalPoint("feeding", 9),
+        retrieveTotalPoint("follow-up", 10),
+        retrieveTotalPoint("reconstruction", 11),
+        retrieveTotalPoint("team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum();
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    function calculateTotalPointSum() {
+        totalPointSum = totalPoints.reduce((sum, point) => sum + point, 0);
+
+        // Retrieve plus-minus values
+        var bonusTotalPromise = get(child(dbRef, `branches/${branch}/plus-minus/Bonustotal`));
+        var minusTotalPromise = get(child(dbRef, `branches/${branch}/plus-minus/minustotal`));
+
+        Promise.all([bonusTotalPromise, minusTotalPromise])
+            .then((snapshots) => {
+                var bonusTotal = snapshots[0].exists() ? snapshots[0].val() : 0;
+                var minusTotal = snapshots[1].exists() ? snapshots[1].val() : 0;
+
+                var finalTotal = (totalPointSum + bonusTotal - minusTotal);
+                console.log("Final Total: " + finalTotal);
+
+                // Update HTML elements
+                document.getElementById("total").textContent = finalTotal;
+
+                // Do further processing with the finalTotal value
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
+    //------------------------------------>
+    //------------------------------------>
+    //------------------------------------>
+    //------------------------------------>
+    //------------------------------------>
+
+    // Retrieve plus-minus values
+
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(init);
+
+    function init() {
+        // Your existing code here, including the code that calls drawLineChart
+        var hrMonth9Promise = get(child(dbRef, `branches/${branch}/hr/totalpointMonth9`));
+        var advertisementsMonth9Promise = get(child(dbRef, `branches/${branch}/Advertisements/totalpointMonth9`));
+        var DonateMonth9Promise = get(child(dbRef, `branches/${branch}/Donate/totalpointMonth9`));
+        var DrcompetitionsMonth9Promise = get(child(dbRef, `branches/${branch}/Dr-competitions/totalpointMonth9`));
+        var exhibitionsMonth9Promise = get(child(dbRef, `branches/${branch}/Exhibitions/totalpointMonth9`));
+        var MarketMonth9Promise = get(child(dbRef, `branches/${branch}/MarketCommittee/totalpointMonth9`));
+        var TelecomMonth9Promise = get(child(dbRef, `branches/${branch}/Telecom/totalpointMonth9`));
+        var challengechampionsMonth9Promise = get(child(dbRef, `branches/${branch}/challenge-champions/totalpointMonth9`));
+        var cubscommitteeMonth9Promise = get(child(dbRef, `branches/${branch}/cubs-committee/totalpointMonth9`));
+        var feedingMonth9Promise = get(child(dbRef, `branches/${branch}/feeding/totalpointMonth9`));
+        var followupMonth9Promise = get(child(dbRef, `branches/${branch}/follow-up/totalpointMonth9`));
+        var reconstructionMonth9Promise = get(child(dbRef, `branches/${branch}/reconstruction/totalpointMonth9`));
+        var teamMonth9Promise = get(child(dbRef, `branches/${branch}/team/totalpointMonth9`));
+
+
+        var hrMonth10Promise = get(child(dbRef, `branches/${branch}/hr/totalpointMonth10`));
+        var advertisementsMonth10Promise = get(child(dbRef, `branches/${branch}/Advertisements/totalpointMonth10`));
+        var DonateMonth10Promise = get(child(dbRef, `branches/${branch}/Donate/totalpointMonth10`));
+        var DrcompetitionsMonth10Promise = get(child(dbRef, `branches/${branch}/Dr-competitions/totalpointMonth10`));
+        var exhibitionsMonth10Promise = get(child(dbRef, `branches/${branch}/Exhibitions/totalpointMonth10`));
+        var MarketMonth10Promise = get(child(dbRef, `branches/${branch}/MarketCommittee/totalpointMonth10`));
+        var TelecomMonth10Promise = get(child(dbRef, `branches/${branch}/Telecom/totalpointMonth10`));
+        var challengechampionsMonth10Promise = get(child(dbRef, `branches/${branch}/challenge-champions/totalpointMonth10`));
+        var cubscommitteeMonth10Promise = get(child(dbRef, `branches/${branch}/cubs-committee/totalpointMonth10`));
+        var feedingMonth10Promise = get(child(dbRef, `branches/${branch}/feeding/totalpointMonth10`));
+        var followupMonth10Promise = get(child(dbRef, `branches/${branch}/follow-up/totalpointMonth10`));
+        var reconstructionMonth10Promise = get(child(dbRef, `branches/${branch}/reconstruction/totalpointMonth10`));
+        var teamMonth10Promise = get(child(dbRef, `branches/${branch}/team/totalpointMonth10`));
+
+
+        var hrMonth11Promise = get(child(dbRef, `branches/${branch}/hr/totalpointMonth11`));
+        var advertisementsMonth11Promise = get(child(dbRef, `branches/${branch}/Advertisements/totalpointMonth11`));
+        var DonateMonth11Promise = get(child(dbRef, `branches/${branch}/Donate/totalpointMonth11`));
+        var DrcompetitionsMonth11Promise = get(child(dbRef, `branches/${branch}/Dr-competitions/totalpointMonth11`));
+        var exhibitionsMonth11Promise = get(child(dbRef, `branches/${branch}/Exhibitions/totalpointMonth11`));
+        var MarketMonth11Promise = get(child(dbRef, `branches/${branch}/MarketCommittee/totalpointMonth11`));
+        var TelecomMonth11Promise = get(child(dbRef, `branches/${branch}/Telecom/totalpointMonth11`));
+        var challengechampionsMonth11Promise = get(child(dbRef, `branches/${branch}/challenge-champions/totalpointMonth11`));
+        var cubscommitteeMonth11Promise = get(child(dbRef, `branches/${branch}/cubs-committee/totalpointMonth11`));
+        var feedingMonth11Promise = get(child(dbRef, `branches/${branch}/feeding/totalpointMonth11`));
+        var followupMonth11Promise = get(child(dbRef, `branches/${branch}/follow-up/totalpointMonth11`));
+        var reconstructionMonth11Promise = get(child(dbRef, `branches/${branch}/reconstruction/totalpointMonth11`));
+        var teamMonth11Promise = get(child(dbRef, `branches/${branch}/team/totalpointMonth11`));
+
+
+        var hrMonth12Promise = get(child(dbRef, `branches/${branch}/hr/totalpointMonth12`));
+        var advertisementsMonth12Promise = get(child(dbRef, `branches/${branch}/Advertisements/totalpointMonth12`));
+        var DonateMonth12Promise = get(child(dbRef, `branches/${branch}/Donate/totalpointMonth12`));
+        var DrcompetitionsMonth12Promise = get(child(dbRef, `branches/${branch}/Dr-competitions/totalpointMonth12`));
+        var exhibitionsMonth12Promise = get(child(dbRef, `branches/${branch}/Exhibitions/totalpointMonth12`));
+        var MarketMonth12Promise = get(child(dbRef, `branches/${branch}/MarketCommittee/totalpointMonth12`));
+        var TelecomMonth12Promise = get(child(dbRef, `branches/${branch}/Telecom/totalpointMonth12`));
+        var challengechampionsMonth12Promise = get(child(dbRef, `branches/${branch}/challenge-champions/totalpointMonth12`));
+        var cubscommitteeMonth12Promise = get(child(dbRef, `branches/${branch}/cubs-committee/totalpointMonth12`));
+        var feedingMonth12Promise = get(child(dbRef, `branches/${branch}/feeding/totalpointMonth12`));
+        var followupMonth12Promise = get(child(dbRef, `branches/${branch}/follow-up/totalpointMonth12`));
+        var reconstructionMonth12Promise = get(child(dbRef, `branches/${branch}/reconstruction/totalpointMonth12`));
+        var teamMonth12Promise = get(child(dbRef, `branches/${branch}/team/totalpointMonth12`));
+
+        Promise.all([hrMonth9Promise, advertisementsMonth9Promise, DonateMonth9Promise, DrcompetitionsMonth9Promise, exhibitionsMonth9Promise,
+            MarketMonth9Promise, TelecomMonth9Promise, challengechampionsMonth9Promise, cubscommitteeMonth9Promise, feedingMonth9Promise,
+            followupMonth9Promise, reconstructionMonth9Promise, teamMonth9Promise, hrMonth10Promise, advertisementsMonth10Promise, DonateMonth10Promise, DrcompetitionsMonth10Promise, exhibitionsMonth10Promise,
+            MarketMonth10Promise, TelecomMonth10Promise, challengechampionsMonth10Promise, cubscommitteeMonth10Promise, feedingMonth10Promise,
+            followupMonth10Promise, reconstructionMonth10Promise, teamMonth10Promise, hrMonth11Promise, advertisementsMonth11Promise, DonateMonth11Promise, DrcompetitionsMonth11Promise, exhibitionsMonth11Promise,
+            MarketMonth11Promise, TelecomMonth11Promise, challengechampionsMonth11Promise, cubscommitteeMonth11Promise, feedingMonth11Promise,
+            followupMonth11Promise, reconstructionMonth11Promise, teamMonth11Promise, hrMonth12Promise, advertisementsMonth12Promise, DonateMonth12Promise, DrcompetitionsMonth12Promise, exhibitionsMonth12Promise,
+            MarketMonth12Promise, TelecomMonth12Promise, challengechampionsMonth12Promise, cubscommitteeMonth12Promise, feedingMonth12Promise,
+            followupMonth12Promise, reconstructionMonth12Promise, teamMonth12Promise])
+            .then((snapshots) => {
+                var hrMonth9 = snapshots[0].exists() ? snapshots[0].val() : 0;
+                var advertisementsMonth9 = snapshots[1].exists() ? snapshots[1].val() : 0;
+                var DonateMonth9 = snapshots[2].exists() ? snapshots[2].val() : 0;
+                var DrcompetitionsMonth9Promise = snapshots[3].exists() ? snapshots[3].val() : 0;
+                var exhibitionsMonth9Promise = snapshots[4].exists() ? snapshots[4].val() : 0;
+                var MarketMonth9Promise = snapshots[5].exists() ? snapshots[5].val() : 0;
+                var TelecomMonth9Promise = snapshots[6].exists() ? snapshots[6].val() : 0;
+                var challengechampionsMonth9Promise = snapshots[7].exists() ? snapshots[7].val() : 0;
+                var cubscommitteeMonth9Promise = snapshots[8].exists() ? snapshots[8].val() : 0;
+                var feedingMonth9Promise = snapshots[9].exists() ? snapshots[9].val() : 0;
+                var followupMonth9Promise = snapshots[10].exists() ? snapshots[10].val() : 0;
+                var reconstructionMonth9Promise = snapshots[11].exists() ? snapshots[11].val() : 0;
+                var teamMonth9Promise = snapshots[12].exists() ? snapshots[12].val() : 0;
+
+                var hrMonth10 = snapshots[13].exists() ? snapshots[13].val() : 0;
+                var advertisementsMonth10 = snapshots[14].exists() ? snapshots[14].val() : 0;
+                var DonateMonth10 = snapshots[15].exists() ? snapshots[15].val() : 0;
+                var DrcompetitionsMonth10Promise = snapshots[16].exists() ? snapshots[16].val() : 0;
+                var exhibitionsMonth10Promise = snapshots[17].exists() ? snapshots[17].val() : 0;
+                var MarketMonth10Promise = snapshots[18].exists() ? snapshots[18].val() : 0;
+                var TelecomMonth10Promise = snapshots[19].exists() ? snapshots[19].val() : 0;
+                var challengechampionsMonth10Promise = snapshots[20].exists() ? snapshots[20].val() : 0;
+                var cubscommitteeMonth10Promise = snapshots[21].exists() ? snapshots[21].val() : 0;
+                var feedingMonth10Promise = snapshots[22].exists() ? snapshots[22].val() : 0;
+                var followupMonth10Promise = snapshots[23].exists() ? snapshots[23].val() : 0;
+                var reconstructionMonth10Promise = snapshots[24].exists() ? snapshots[24].val() : 0;
+                var teamMonth10Promise = snapshots[25].exists() ? snapshots[25].val() : 0;
+
+                var hrMonth11 = snapshots[26].exists() ? snapshots[26].val() : 0;
+                var advertisementsMonth11 = snapshots[27].exists() ? snapshots[27].val() : 0;
+                var DonateMonth11 = snapshots[28].exists() ? snapshots[28].val() : 0;
+                var DrcompetitionsMonth11Promise = snapshots[29].exists() ? snapshots[29].val() : 0;
+                var exhibitionsMonth11Promise = snapshots[30].exists() ? snapshots[30].val() : 0;
+                var MarketMonth11Promise = snapshots[31].exists() ? snapshots[31].val() : 0;
+                var TelecomMonth11Promise = snapshots[32].exists() ? snapshots[32].val() : 0;
+                var challengechampionsMonth11Promise = snapshots[33].exists() ? snapshots[33].val() : 0;
+                var cubscommitteeMonth11Promise = snapshots[34].exists() ? snapshots[34].val() : 0;
+                var feedingMonth11Promise = snapshots[35].exists() ? snapshots[35].val() : 0;
+                var followupMonth11Promise = snapshots[36].exists() ? snapshots[36].val() : 0;
+                var reconstructionMonth11Promise = snapshots[37].exists() ? snapshots[37].val() : 0;
+                var teamMonth11Promise = snapshots[38].exists() ? snapshots[38].val() : 0;
+
+                var hrMonth12 = snapshots[39].exists() ? snapshots[39].val() : 0;
+                var advertisementsMonth12 = snapshots[40].exists() ? snapshots[40].val() : 0;
+                var DonateMonth12 = snapshots[41].exists() ? snapshots[41].val() : 0;
+                var DrcompetitionsMonth12Promise = snapshots[42].exists() ? snapshots[42].val() : 0;
+                var exhibitionsMonth12Promise = snapshots[43].exists() ? snapshots[43].val() : 0;
+                var MarketMonth12Promise = snapshots[44].exists() ? snapshots[44].val() : 0;
+                var TelecomMonth12Promise = snapshots[45].exists() ? snapshots[45].val() : 0;
+                var challengechampionsMonth12Promise = snapshots[46].exists() ? snapshots[46].val() : 0;
+                var cubscommitteeMonth12Promise = snapshots[47].exists() ? snapshots[47].val() : 0;
+                var feedingMonth12Promise = snapshots[48].exists() ? snapshots[48].val() : 0;
+                var followupMonth12Promise = snapshots[49].exists() ? snapshots[49].val() : 0;
+                var reconstructionMonth12Promise = snapshots[50].exists() ? snapshots[50].val() : 0;
+                var teamMonth12Promise = snapshots[51].exists() ? snapshots[51].val() : 0;
+
+                var totalMonth9 = (hrMonth9 + advertisementsMonth9 + DonateMonth9 + DrcompetitionsMonth9Promise + exhibitionsMonth9Promise + feedingMonth9Promise + cubscommitteeMonth9Promise + challengechampionsMonth9Promise + TelecomMonth9Promise + MarketMonth9Promise + teamMonth9Promise + reconstructionMonth9Promise + followupMonth9Promise);
+                var totalMonth10 = (hrMonth10 + advertisementsMonth10 + DonateMonth10 + DrcompetitionsMonth10Promise + exhibitionsMonth10Promise + feedingMonth10Promise + cubscommitteeMonth10Promise + challengechampionsMonth10Promise + TelecomMonth10Promise + MarketMonth10Promise + teamMonth10Promise + reconstructionMonth10Promise + followupMonth10Promise);
+                var totalMonth11 = (hrMonth11 + advertisementsMonth11 + DonateMonth11 + DrcompetitionsMonth11Promise + exhibitionsMonth11Promise + feedingMonth11Promise + cubscommitteeMonth11Promise + challengechampionsMonth11Promise + TelecomMonth11Promise + MarketMonth11Promise + teamMonth11Promise + reconstructionMonth11Promise + followupMonth11Promise);
+                var totalMonth12 = (hrMonth12 + advertisementsMonth12 + DonateMonth12 + DrcompetitionsMonth12Promise + exhibitionsMonth12Promise + feedingMonth12Promise + cubscommitteeMonth12Promise + challengechampionsMonth12Promise + TelecomMonth12Promise + MarketMonth12Promise + teamMonth12Promise + reconstructionMonth12Promise + followupMonth12Promise);
+                console.log("total Month 12: " + totalMonth12)
+                // Update HTML elements
+                drawLineChart(totalMonth9, totalMonth10, totalMonth11, totalMonth12);
+
+                // Do further processing with the finalTotal value
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
+        function drawLineChart(totalMonth9, totalMonth10, totalMonth11, totalMonth12) {
+            const data = new google.visualization.DataTable();
+            data.addColumn('string', 'Month');
+            data.addColumn('number', 'Total');
+
+            data.addRows([
+                ['Sep 23', totalMonth9],
+                ['Oct 23', totalMonth10],
+                ['Nov 23', totalMonth11],
+                ['Dec 23', totalMonth12],
+            ]);
+
+            const options = {
+                chart: {
+                    title: 'Total point per month',
+                },
+                axes: {
+                    x: {
+                        0: { side: 'bottom' },
+                    },
+                },
+            };
+
+            const chart = new google.visualization.LineChart(document.getElementById('line_top_x'));
+            chart.draw(data, options);
+        }
+    }
+
+
+</script>
+
+</html>
