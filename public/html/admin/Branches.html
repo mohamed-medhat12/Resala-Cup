@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../assets/resalalogo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/home.css">
+    <title>Cup analysis</title>
+    <style>
+        table {
+            /* direction: rtl; */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top:50px ;">Resala Association</h1>
+
+    <div class="wrapper">
+    <div class="container">
+        <!-- المعادى -->
+            <div class="box">
+                <h3>المعادى</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أمنية</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أمل / فؤاد</p>
+                </div>
+                <div>
+                    <p id="totalMaadi"></p>
+                </div>
+                <a class="btn" id="maadi">اضغط هنا</a>
+            </div>
+
+            <!-- المهندسين -->
+            <div class="box">
+                <h3>المهندسين</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أحمد</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أميرة</p>
+                </div>
+                <div>
+                    <p id="totalMohandessin"></p>
+                </div>
+                <a id="Mohandessin" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- مدينة نصر -->
+            <div class="box">
+                <h3>مدينة نصر</h3>
+                <div class="select">
+                    <span>بيرونزي</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">سلمى</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">جنة</p>
+                </div>
+
+                <div>
+                    <p id="totalnaser-city"></p>
+                </div>
+
+                <a id="naser-city" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- مصر الجديدة -->
+            <div class="box">
+                <h3>مصر الجديدة</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">أشرف</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نورهان</p>
+                </div>
+                <div>
+                    <p id="totalnew-cairo"></p>
+                </div>
+                <a id="new-cairo" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- اسكندرية -->
+            <div class="box">
+                <h3>اسكندرية</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">محمود</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نور</p>
+                </div>
+
+                <div>
+                    <p id="totalalex"></p>
+                </div>
+
+                <a class="btn" id="alex">اضغط هنا</a>
+            </div>
+
+            <!-- فيصل -->
+            <div class="box">
+                <h3>فيصل</h3>
+                <div class="select">
+                    <span>فضى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">إسراء</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">إسراء</p>
+                </div>
+
+                <div>
+                    <p id="totalFaisal"></p>
+                </div>
+
+                <a id="Faisal" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- حلوان -->
+            <div class="box">
+                <h3>حلوان</h3>
+                <div class="select">
+                    <span>ذهبى</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">مصطفى</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">زينب</p>
+                </div>
+
+                <div>
+                    <p id="totalHelwan"></p>
+                </div>
+                <a id="Helwan" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- المقطم -->
+            <div class="box">
+                <h3>المقطم</h3>
+                <div class="select">
+                    <span>بيرونزي</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">مريم</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">تسنيم</p>
+                </div>
+
+                <div>
+                    <p id="totalMokattam"></p>
+                </div>
+
+                <a id="El-Mokattam" class="btn">اضغط هنا</a>
+            </div>
+
+            <!-- October -->
+            <div class="box">
+                <h3>اكتوبر</h3>
+                <div class="select">
+                    <span>بيرونزي</span>
+                    <p class="name"> :المثلث</p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="right-align tit">Head</p>
+                    <p class="left-align tit">sub head</p>
+
+                </div>
+                <div class="paragraphs">
+                    <p class="right-align" style="margin-top: 0;">ساره</p>
+                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">هبة</p>
+                </div>
+                <div>
+                    <p id="totalOctober"></p>
+                </div>
+                <a id="October" class="btn">اضغط هنا</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../../JS/js/bootstrap.js"></script>
+<script src="../../JS/adminCupsData.js" type="module"></script>
+
+</html>

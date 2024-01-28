@@ -22,6 +22,9 @@
 <body>
     <h1 style="margin-top:50px ;">Resala Association</h1>
     <div class="chartsBx">
+            <div id="chart_div" class="chart" style="height: 500px; width: 900px;"></div>
+        </div>
+    <div class="chartsBx">
         <div id="chart_div_gold" class="chart" style="height: 500px; width: 900px;"></div>
         <table class="table table-bordered">
             <tbody>
@@ -96,10 +99,45 @@
             </tbody>
         </table>
     </div>
+    <div class="wrapper">
+    <div class="container">
+        <!-- المعادى -->              
+                <div>
+                    <p id="totalMaadi"></p>
+                </div>
+                <div>
+                    <p id="totalMohandessin"></p>
+                </div>
+                
+                <div>
+                    <p id="totalnaser-city"></p>
+                </div>
+
+                <div>
+                    <p id="totalnew-cairo"></p>
+                </div>
+                
+                <div>
+                    <p id="totalalex"></p>
+                </div>              
+                <div>
+                    <p id="totalFaisal"></p>
+                </div>
+                <div>
+                    <p id="totalHelwan"></p>
+                </div>              
+                <div>
+                    <p id="totalMokattam"></p>
+                </div>
+                <div>
+                    <p id="totalOctober"></p>
+                </div>
+            </div>
+    </div>
 </body>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="../../JS/js/bootstrap.js"></script>
-<script type="module">
+<script  type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
     import { getDatabase, ref, set, get, child, update } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
     // Your web app's Firebase configuration
@@ -112,7 +150,7 @@
         messagingSenderId: "920754872696",
         appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
     };
-
+   
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
@@ -121,7 +159,255 @@
     const dbRef = ref(db);
     var totalPoints = [];
     var totalPointSum = 0;
+function retrieveTotalPoint(bran, childPath, index) {
+        return new Promise((resolve, reject) => {
+            get(child(dbRef, `branches/${bran}/${childPath}/totalPoint`))
+                .then((snapshot) => {
+                    if (snapshot.exists()) {
+                        console.log(snapshot.val());
+                        totalPoints[index] = snapshot.val();
+                        resolve();
+                    } else {
+                        console.log("No data available");
+                        reject();
+                    }
+                })
+                .catch((error) => {
+                    console.error(error);
+                    reject();
+                });
+        });
+    }
 
+    Promise.all([
+        retrieveTotalPoint("maadi", "hr", 0),
+        retrieveTotalPoint("maadi", "Telecom", 1),
+        retrieveTotalPoint("maadi", "Advertisements", 2),
+        retrieveTotalPoint("maadi", "Donate", 3),
+        retrieveTotalPoint("maadi", "Dr-competitions", 4),
+        retrieveTotalPoint("maadi", "Exhibitions", 5),
+        retrieveTotalPoint("maadi", "MarketCommittee", 6),
+        retrieveTotalPoint("maadi", "challenge-champions", 7),
+        retrieveTotalPoint("maadi", "cubs-committee", 8),
+        retrieveTotalPoint("maadi", "feeding", 9),
+        retrieveTotalPoint("maadi", "follow-up", 10),
+        retrieveTotalPoint("maadi", "reconstruction", 11),
+        retrieveTotalPoint("maadi", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("maadi", "totalMaadi", 0);
+
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    function calculateTotalPointSum(bran, idtext, totalPointSum) {
+        totalPointSum = totalPoints.reduce((sum, point) => sum + point, 0);
+
+        // Retrieve plus-minus values
+        var bonusTotalPromise = get(child(dbRef, `branches/${bran}/plus-minus/Bonustotal`));
+        var minusTotalPromise = get(child(dbRef, `branches/${bran}/plus-minus/minustotal`));
+
+        Promise.all([bonusTotalPromise, minusTotalPromise])
+            .then((snapshots) => {
+                var bonusTotal = snapshots[0].exists() ? snapshots[0].val() : 0;
+                var minusTotal = snapshots[1].exists() ? snapshots[1].val() : 0;
+
+                var finalTotal = (totalPointSum + bonusTotal - minusTotal);
+                console.log("Final Total: " + finalTotal);
+
+                // Update HTML elements
+                //document.getElementById(idtext).textContent = "Total: " + finalTotal;
+                const updates = {};
+                update[`branches/${bran}/totalpoint`] = parseInt(finalTotal);
+                // Do further processing with the finalTotal value
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
+    Promise.all([
+        retrieveTotalPoint("Mohandessin", "hr", 0),
+        retrieveTotalPoint("Mohandessin", "Telecom", 1),
+        retrieveTotalPoint("Mohandessin", "Advertisements", 2),
+        retrieveTotalPoint("Mohandessin", "Donate", 3),
+        retrieveTotalPoint("Mohandessin", "Dr-competitions", 4),
+        retrieveTotalPoint("Mohandessin", "Exhibitions", 5),
+        retrieveTotalPoint("Mohandessin", "MarketCommittee", 6),
+        retrieveTotalPoint("Mohandessin", "challenge-champions", 7),
+        retrieveTotalPoint("Mohandessin", "cubs-committee", 8),
+        retrieveTotalPoint("Mohandessin", "feeding", 9),
+        retrieveTotalPoint("Mohandessin", "follow-up", 10),
+        retrieveTotalPoint("Mohandessin", "reconstruction", 11),
+        retrieveTotalPoint("Mohandessin", "team", 12),
+    ])
+        .then(() => {
+            totalPointSum = 0
+            calculateTotalPointSum("Mohandessin", "totalMohandessin", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+
+    Promise.all([
+        retrieveTotalPoint("naser city", "hr", 0),
+        retrieveTotalPoint("naser city", "Telecom", 1),
+        retrieveTotalPoint("naser city", "Advertisements", 2),
+        retrieveTotalPoint("naser city", "Donate", 3),
+        retrieveTotalPoint("naser city", "Dr-competitions", 4),
+        retrieveTotalPoint("naser city", "Exhibitions", 5),
+        retrieveTotalPoint("naser city", "MarketCommittee", 6),
+        retrieveTotalPoint("naser city", "challenge-champions", 7),
+        retrieveTotalPoint("naser city", "cubs-committee", 8),
+        retrieveTotalPoint("naser city", "feeding", 9),
+        retrieveTotalPoint("naser city", "follow-up", 10),
+        retrieveTotalPoint("naser city", "reconstruction", 11),
+        retrieveTotalPoint("naser city", "team", 12),
+    ])
+        .then(() => {
+
+            calculateTotalPointSum("naser city", "totalnaser-city", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+
+
+    Promise.all([
+        retrieveTotalPoint("new cairo", "hr", 0),
+        retrieveTotalPoint("new cairo", "Telecom", 1),
+        retrieveTotalPoint("new cairo", "Advertisements", 2),
+        retrieveTotalPoint("new cairo", "Donate", 3),
+        retrieveTotalPoint("new cairo", "Dr-competitions", 4),
+        retrieveTotalPoint("new cairo", "Exhibitions", 5),
+        retrieveTotalPoint("new cairo", "MarketCommittee", 6),
+        retrieveTotalPoint("new cairo", "challenge-champions", 7),
+        retrieveTotalPoint("new cairo", "cubs-committee", 8),
+        retrieveTotalPoint("new cairo", "feeding", 9),
+        retrieveTotalPoint("new cairo", "follow-up", 10),
+        retrieveTotalPoint("new cairo", "reconstruction", 11),
+        retrieveTotalPoint("new cairo", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("new cairo", "totalnew-cairo");
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    Promise.all([
+        retrieveTotalPoint("alex", "hr", 0),
+        retrieveTotalPoint("alex", "Telecom", 1),
+        retrieveTotalPoint("alex", "Advertisements", 2),
+        retrieveTotalPoint("alex", "Donate", 3),
+        retrieveTotalPoint("alex", "Dr-competitions", 4),
+        retrieveTotalPoint("alex", "Exhibitions", 5),
+        retrieveTotalPoint("alex", "MarketCommittee", 6),
+        retrieveTotalPoint("alex", "challenge-champions", 7),
+        retrieveTotalPoint("alex", "cubs-committee", 8),
+        retrieveTotalPoint("alex", "feeding", 9),
+        retrieveTotalPoint("alex", "follow-up", 10),
+        retrieveTotalPoint("alex", "reconstruction", 11),
+        retrieveTotalPoint("alex", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("alex", "totalalex", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    Promise.all([
+        retrieveTotalPoint("Faisal", "hr", 0),
+        retrieveTotalPoint("Faisal", "Telecom", 1),
+        retrieveTotalPoint("Faisal", "Advertisements", 2),
+        retrieveTotalPoint("Faisal", "Donate", 3),
+        retrieveTotalPoint("Faisal", "Dr-competitions", 4),
+        retrieveTotalPoint("Faisal", "Exhibitions", 5),
+        retrieveTotalPoint("Faisal", "MarketCommittee", 6),
+        retrieveTotalPoint("Faisal", "challenge-champions", 7),
+        retrieveTotalPoint("Faisal", "cubs-committee", 8),
+        retrieveTotalPoint("Faisal", "feeding", 9),
+        retrieveTotalPoint("Faisal", "follow-up", 10),
+        retrieveTotalPoint("Faisal", "reconstruction", 11),
+        retrieveTotalPoint("Faisal", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("Faisal", "totalFaisal", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    Promise.all([
+        retrieveTotalPoint("Helwan", "hr", 0),
+        retrieveTotalPoint("Helwan", "Telecom", 1),
+        retrieveTotalPoint("Helwan", "Advertisements", 2),
+        retrieveTotalPoint("Helwan", "Donate", 3),
+        retrieveTotalPoint("Helwan", "Dr-competitions", 4),
+        retrieveTotalPoint("Helwan", "Exhibitions", 5),
+        retrieveTotalPoint("Helwan", "MarketCommittee", 6),
+        retrieveTotalPoint("Helwan", "challenge-champions", 7),
+        retrieveTotalPoint("Helwan", "cubs-committee", 8),
+        retrieveTotalPoint("Helwan", "feeding", 9),
+        retrieveTotalPoint("Helwan", "follow-up", 10),
+        retrieveTotalPoint("Helwan", "reconstruction", 11),
+        retrieveTotalPoint("Helwan", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("Helwan", "totalHelwan", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    Promise.all([
+        retrieveTotalPoint("El Mokattam", "hr", 0),
+        retrieveTotalPoint("El Mokattam", "Telecom", 1),
+        retrieveTotalPoint("El Mokattam", "Advertisements", 2),
+        retrieveTotalPoint("El Mokattam", "Donate", 3),
+        retrieveTotalPoint("El Mokattam", "Dr-competitions", 4),
+        retrieveTotalPoint("El Mokattam", "Exhibitions", 5),
+        retrieveTotalPoint("El Mokattam", "MarketCommittee", 6),
+        retrieveTotalPoint("El Mokattam", "challenge-champions", 7),
+        retrieveTotalPoint("El Mokattam", "cubs-committee", 8),
+        retrieveTotalPoint("El Mokattam", "feeding", 9),
+        retrieveTotalPoint("El Mokattam", "follow-up", 10),
+        retrieveTotalPoint("El Mokattam", "reconstruction", 11),
+        retrieveTotalPoint("El Mokattam", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("El Mokattam", "totalMokattam", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
+
+    Promise.all([
+        retrieveTotalPoint("October", "hr", 0),
+        retrieveTotalPoint("October", "Telecom", 1),
+        retrieveTotalPoint("October", "Advertisements", 2),
+        retrieveTotalPoint("October", "Donate", 3),
+        retrieveTotalPoint("October", "Dr-competitions", 4),
+        retrieveTotalPoint("October", "Exhibitions", 5),
+        retrieveTotalPoint("October", "MarketCommittee", 6),
+        retrieveTotalPoint("October", "challenge-champions", 7),
+        retrieveTotalPoint("October", "cubs-committee", 8),
+        retrieveTotalPoint("October", "feeding", 9),
+        retrieveTotalPoint("October", "follow-up", 10),
+        retrieveTotalPoint("October", "reconstruction", 11),
+        retrieveTotalPoint("October", "team", 12),
+    ])
+        .then(() => {
+            calculateTotalPointSum("October", "totalOctober", 0);
+        })
+        .catch(() => {
+            console.log("Error occurred while retrieving totalPoint values");
+        });
 
     google.charts.load('current', { packages: ['corechart', 'bar'] });
     google.charts.setOnLoadCallback(init);
@@ -460,6 +746,7 @@
                 var totalcairo = (hrcairo + advertisementscairo + Donatecairo + DrcompetitionscairoPromise + exhibitionscairoPromise + feedingcairoPromise + cubscommitteecairoPromise + challengechampionscairoPromise + TelecomcairoPromise + MarketcairoPromise + teamcairoPromise + reconstructioncairoPromise + followupcairoPromise + Bonucairo - minucairo);
                 var totaloct = (hrOctober + advertisementsOctober + DonateOctober + DrcompetitionsOctoberPromise + exhibitionsOctoberPromise + feedingOctoberPromise + cubscommitteeOctoberPromise + challengechampionsOctoberPromise + TelecomOctoberPromise + MarketOctoberPromise + teamOctoberPromise + reconstructionOctoberPromise + followupOctoberPromise + BonuOctober - minuOctober);
                 console.log("total Month 12: " + totalFais)
+                drawBasic(totalMaad, totalMohand, totalalx, totalFais, totalHelw, totalMokat, totalnaser, totalcairo, totaloct);
                 // Update HTML elements
                 document.getElementById("new-cairo").textContent = totalcairo;
                 document.getElementById("helwan").textContent = totalHelw;
@@ -484,7 +771,37 @@
             .catch((error) => {
                 console.error(error);
             });
+        function drawBasic(totalMaad, totalMohand, totalalx, totalFais, totalHelw, totalMokat, totalnaser, totalcairo, totaloct) {
 
+            var data = google.visualization.arrayToDataTable([
+                ['Branch', ' total Point',],
+                ['المعادى', totalMaad],
+                ['الاسكندرية', totalalx],
+                ['أكتوبر', totaloct],
+                ['مدينة نصر', totalnaser],
+                ['مصر الجديدة', totalcairo],
+                ['المقطم', totalMokat],
+                ['حلوان', totalHelw],
+                ['فيصل', totalFais],
+                ['المهندسين', totalMohand],
+            ]);
+
+            var options = {
+                title: 'ترتيب الفروع للاربع شهور',
+                // chartArea: { width: '50%' },
+                hAxis: {
+                    title: 'Total Point',
+                    minValue: 0
+                },
+                vAxis: {
+                    title: 'الفروع'
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
         function drawBasicgold(totalMohand, totalHelw, totalcairo) {
 
             var data = google.visualization.arrayToDataTable([
@@ -563,9 +880,6 @@
             chart.draw(data, options);
         }
     }
-
-
-
 
 
 </script>

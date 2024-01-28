@@ -1,314 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="../../assets/resalalogo.jpg" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../../CSS/home.css">
-    <title>The Cup login</title>
-</head>
-
-<body>
-    <!-- <nav class="navbar" style="background: linear-gradient(120deg, #2980b9, #27328b);">
-      
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Resala</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <input type="button" value="حفظ التعديلات" id="btnChanges" style="background: transparent;">
-                    </li>
-                </ul>
-                <span class="navbar-text">
-
-                </span>
-            </div>
-        </div>
-
-    </nav> -->
-    <div class="wrapper">
-        <h1>سَهْلٍ</h1>
-        <div class="chartsBx">
-            <div id="chart_div" class="chart" style="height: 500px; width: 900px;"></div>
-        </div>
-        <br>
-        <div class="container">
-
-            <!-- المعادى -->
-            <div class="box">
-                <h3>المعادى</h3>
-                <div class="select">
-                    <span>فضى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">أمنية</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أمل / فؤاد</p>
-                </div>
-                <div>
-                    <p id="totalMaadi"></p>
-                </div>
-                <a class="btn" id="maadi">اضغط هنا</a>
-            </div>
-
-            <!-- المهندسين -->
-            <div class="box">
-                <h3>المهندسين</h3>
-                <div class="select">
-                    <span>ذهبى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">أحمد</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">أميرة</p>
-                </div>
-                <div>
-                    <p id="totalMohandessin"></p>
-                </div>
-                <a id="Mohandessin" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- مدينة نصر -->
-            <div class="box">
-                <h3>مدينة نصر</h3>
-                <div class="select">
-                    <span>بيرونزي</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">سلمى</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">جنة</p>
-                </div>
-
-                <div>
-                    <p id="totalnaser-city"></p>
-                </div>
-
-                <a id="naser-city" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- مصر الجديدة -->
-            <div class="box">
-                <h3>مصر الجديدة</h3>
-                <div class="select">
-                    <span>ذهبى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">أشرف</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نورهان</p>
-                </div>
-                <div>
-                    <p id="totalnew-cairo"></p>
-                </div>
-                <a id="new-cairo" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- اسكندرية -->
-            <div class="box">
-                <h3>اسكندرية</h3>
-                <div class="select">
-                    <span>فضى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">محمود</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">نور</p>
-                </div>
-
-                <div>
-                    <p id="totalalex"></p>
-                </div>
-
-                <a class="btn" id="alex">اضغط هنا</a>
-            </div>
-
-            <!-- فيصل -->
-            <div class="box">
-                <h3>فيصل</h3>
-                <div class="select">
-                    <span>فضى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">إسراء</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">إسراء</p>
-                </div>
-
-                <div>
-                    <p id="totalFaisal"></p>
-                </div>
-
-                <a id="Faisal" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- حلوان -->
-            <div class="box">
-                <h3>حلوان</h3>
-                <div class="select">
-                    <span>ذهبى</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">مصطفى</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">زينب</p>
-                </div>
-
-                <div>
-                    <p id="totalHelwan"></p>
-                </div>
-                <a id="Helwan" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- المقطم -->
-            <div class="box">
-                <h3>المقطم</h3>
-                <div class="select">
-                    <span>بيرونزي</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">مريم</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">تسنيم</p>
-                </div>
-
-                <div>
-                    <p id="totalMokattam"></p>
-                </div>
-
-                <a id="El-Mokattam" class="btn">اضغط هنا</a>
-            </div>
-
-            <!-- October -->
-            <div class="box">
-                <h3>اكتوبر</h3>
-                <div class="select">
-                    <span>بيرونزي</span>
-                    <p class="name"> :المثلث</p>
-                </div>
-
-                <div class="paragraphs">
-                    <p class="right-align tit">Head</p>
-                    <p class="left-align tit">sub head</p>
-
-                </div>
-                <div class="paragraphs">
-                    <p class="right-align" style="margin-top: 0;">ساره</p>
-                    <p class="left-align" style="margin-right: 10px; margin-left: 55px; margin-top: 0;">هبة</p>
-                </div>
-                <div>
-                    <p id="totalOctober"></p>
-                </div>
-                <a id="October" class="btn">اضغط هنا</a>
-            </div>
-
-
-            <!-- Cup -->
-            <div class="box">
-                <img src="../../assets/cups.jpg" alt="">
-                <h3>The Cup</h3>
-                <div>
-                    <br>
-                </div>
-                <a href="./cupsData.html" class="btn">اضغط هنا</a>
-            </div>
-
-
-            <!-- Cup -->
-            <div class="box">
-                <img src="../../assets/Ranking.png" alt="">
-                <h3>Ranking committees</h3>
-                <div>
-                    <br>
-                </div>
-                <a href="./committeesRank.html" class="btn">اضغط هنا</a>
-            </div>
-
-
-
-            <!-- control -->
-            <div class="box">
-                <img src="../../assets/settings.png" alt="">
-                <h3>Settings</h3>
-                <div>
-                    <br>
-                </div>
-                <a href="./1343299293.html" class="btn">اضغط هنا</a>
-            </div>
-
-        </div>
-    </div>
-
-   
-</body>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="../../JS/js/bootstrap.js"></script>
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
     import { getDatabase, ref, set, get, child, update } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
     // Your web app's Firebase configuration
     const firebaseConfig = {
@@ -320,62 +10,15 @@
         messagingSenderId: "920754872696",
         appId: "1:920754872696:web:18b4329eaf69d2dd8ee88d"
     };
-
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
 
-    document.getElementById("maadi").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "maadi");
-        window.location.href = "committees.html";
-    });
-
-
-    document.getElementById("alex").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "alex");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("Mohandessin").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "Mohandessin");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("naser-city").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "naser city");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("new-cairo").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "new cairo");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("Faisal").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "Faisal");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("Helwan").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "Helwan");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("El-Mokattam").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "El Mokattam");
-        window.location.href = "committees.html";
-    });
-
-    document.getElementById("October").addEventListener('click', function (e) {
-        localStorage.setItem("branch", "October");
-        window.location.href = "committees.html";
-    });
 
     const dbRef = ref(db);
     var totalPoints = [];
     var totalPointSum = 0;
-
-    function retrieveTotalPoint(bran, childPath, index) {
+function retrieveTotalPoint(bran, childPath, index) {
         return new Promise((resolve, reject) => {
             get(child(dbRef, `branches/${bran}/${childPath}/totalPoint`))
                 .then((snapshot) => {
@@ -961,17 +604,32 @@
                 var totalnaser = (hrnaser + advertisementsnaser + Donatenaser + DrcompetitionsnaserPromise + exhibitionsnaserPromise + feedingnaserPromise + cubscommitteenaserPromise + challengechampionsnaserPromise + TelecomnaserPromise + MarketnaserPromise + teamnaserPromise + reconstructionnaserPromise + followupnaserPromise + Bonunaser - minunaser);
                 var totalcairo = (hrcairo + advertisementscairo + Donatecairo + DrcompetitionscairoPromise + exhibitionscairoPromise + feedingcairoPromise + cubscommitteecairoPromise + challengechampionscairoPromise + TelecomcairoPromise + MarketcairoPromise + teamcairoPromise + reconstructioncairoPromise + followupcairoPromise + Bonucairo - minucairo);
                 var totaloct = (hrOctober + advertisementsOctober + DonateOctober + DrcompetitionsOctoberPromise + exhibitionsOctoberPromise + feedingOctoberPromise + cubscommitteeOctoberPromise + challengechampionsOctoberPromise + TelecomOctoberPromise + MarketOctoberPromise + teamOctoberPromise + reconstructionOctoberPromise + followupOctoberPromise + BonuOctober - minuOctober);
-                console.log("total Month 12: " + totalFaisal)
-                // Update HTML elements
-
+                console.log("total Month 12: " + totalFais)
                 drawBasic(totalMaad, totalMohand, totalalx, totalFais, totalHelw, totalMokat, totalnaser, totalcairo, totaloct);
+                // Update HTML elements
+                document.getElementById("new-cairo").textContent = totalcairo;
+                document.getElementById("helwan").textContent = totalHelw;
+                document.getElementById("mohandesien").textContent = totalMohand;
+
+
+                document.getElementById("maadi").textContent = totalMaad;
+                document.getElementById("alex").textContent = totalalx;
+                document.getElementById("feas").textContent = totalFais;
+
+
+                document.getElementById("mok").textContent = totalMokat;
+                document.getElementById("naser").textContent = totalnaser;
+                document.getElementById("oct").textContent = totaloct;
+
+                drawBasicgold(totalMohand, totalHelw, totalcairo);
+                drawBasicselvier(totalMaad, totalalx, totalFais);
+                drawBasicbronze(totaloct, totalMokat, totalnaser);
 
                 // Do further processing with the finalTotal value
             })
             .catch((error) => {
                 console.error(error);
             });
-
         function drawBasic(totalMaad, totalMohand, totalalx, totalFais, totalHelw, totalMokat, totalnaser, totalcairo, totaloct) {
 
             var data = google.visualization.arrayToDataTable([
@@ -1003,10 +661,82 @@
 
             chart.draw(data, options);
         }
+        function drawBasicgold(totalMohand, totalHelw, totalcairo) {
 
-        
+            var data = google.visualization.arrayToDataTable([
+                ['Branch', ' total Point',],
+                ['مصر الجديدة', totalcairo],
+                ['حلوان', totalHelw],
+                ['المهندسين', totalMohand],
+            ]);
+
+            var options = {
+                title: 'المثلث الذهبى',
+                // chartArea: { width: '50%' },
+                hAxis: {
+                    title: 'Total Point',
+                    minValue: 0
+                },
+                vAxis: {
+                    title: 'الفروع'
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div_gold'));
+
+            chart.draw(data, options);
+        }
+
+        function drawBasicselvier(totalMaad, totalalx, totalFais) {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Branch', ' total Point',],
+                ['المعادى', totalMaad],
+                ['الاسكندرية', totalalx],
+                ['فيصل', totalFais],
+            ]);
+
+            var options = {
+                title: 'المثلث الفضى',
+                // chartArea: { width: '50%' },
+                hAxis: {
+                    title: 'Total Point',
+                    minValue: 0
+                },
+                vAxis: {
+                    title: 'الفروع'
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div_selvier'));
+
+            chart.draw(data, options);
+        }
+
+        function drawBasicbronze(totaloct, totalMokat, totalnaser) {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Branch', ' total Point',],
+                ['المقطم', totalMokat],
+                ['أكتوبر', totaloct],
+                ['مدينة نصر', totalnaser],
+            ]);
+
+            var options = {
+                title: 'المثلث البرونزى',
+                // chartArea: { width: '50%' },
+                hAxis: {
+                    title: 'Total Point',
+                    minValue: 0
+                },
+                vAxis: {
+                    title: 'الفروع'
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div_bronze'));
+
+            chart.draw(data, options);
+        }
     }
 
-</script>
-<script src="../../JS/script.js"></script>
-</html>
