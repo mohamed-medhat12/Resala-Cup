@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <link rel="icon" href="./assets/resalalogo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubs Committee</title>
+    <link rel="stylesheet" href="../../CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/hr.css">
+    <style>
+        table {
+            direction: rtl;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .vertical-center {
+  margin: auto;
+  width: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="output"></div>
+     <table class="table table-bordered">
+            <tbody id="data-sheet">
+                
+                <tr style="background-color: #E2EFDA;">
+                    <th  style="background-color: #E2EFDA;">وقت الارسال</td>
+                    <th  style="background-color: #E2EFDA;">معاد الاجتماع</th>
+                    <th  style="background-color: #E2EFDA;">الفرع</th>
+                    <th  style="background-color: #E2EFDA;">عنوان الاجتماع</th>
+                    <th  style="background-color: #E2EFDA;">محضر الاجتماع</th>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    <script src="../../JS/getMeetingDataAdmin.js"></script>
+</body>
+</html>
